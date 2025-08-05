@@ -39,6 +39,7 @@ const info = {
 
 const grey = {
   0: "#adafca",
+  400: "#454745",
   500: "#667085",
   600: "#ADAEBA",
 };
