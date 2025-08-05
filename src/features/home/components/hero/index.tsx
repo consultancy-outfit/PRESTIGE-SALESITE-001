@@ -1,75 +1,96 @@
-import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
-import { Box, Card, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
+import EastSharpIcon from "@mui/icons-material/EastSharp";
 import Image from "next/image";
-import { HomeHeroSectionImage, PatternImage } from "../../assets";
-
+import { HomeHeroSectionImage } from "../../assets";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
+import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 const Hero = () => {
   return (
-    <Box
-      px={{ lg: 20, sm: 5, xs: 2 }}
-      sx={{
-        width: "100%",
-        mt: { md: 6, xs: 2 },
-      }}
-    >
-      <SlideUpInView>
-        <Card
-          sx={{
-            backgroundColor: "#F3F2FF",
-            px: { lg: 4, md: 2, xs: 1 },
-            m: "auto",
-            borderTopRightRadius: 20,
-            borderTopLeftRadius: 20,
-            backgroundImage: `url(${PatternImage.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+    <SlideUpInView>
+      <Stack alignItems="center" spacing={2}>
+        <Typography
+          textAlign="center"
+          fontSize={{ md: "3.5rem", xs: "1.8rem" }}
+          fontWeight={"bold"}
+          fontFamily="Inter"
+          m="auto"
+          color="#fff"
         >
-          <Stack alignItems="center">
-            <Typography
-              textAlign="center"
-              fontSize={{ md: "4.25rem", xs: "2.5rem" }}
-              fontWeight={500}
-              fontFamily="Inter"
-              width={{ md: "50%", xs: "100%" }}
-              m="auto"
+          Intelligent Financial Products for
+        </Typography>
+        <Typography
+          textAlign="center"
+          fontSize={{ md: "3.5rem", xs: "1.8rem" }}
+          fontWeight={"bold"}
+          fontFamily="Inter"
+          m="auto"
+          color="#fff"
+        >
+          Confident Decisions{" "}
+        </Typography>
+        <Typography
+          textAlign="center"
+          fontSize={{ md: "1.25rem", xs: "1rem" }}
+          fontFamily="Inter"
+          color="#fff"
+          sx={{ width: { md: "45%", xs: "100%" }, m: "auto" }}
+        >
+          Prestige delivers premium, high-performance financial technology —
+          empowering businesses to manage, move, and understand money with
+          precision. Our modular suite connects data, identity, payments, and
+          automation to bring clarity and control to every financial
+          interaction.
+        </Typography>
+        <Stack
+          direction={{ md: "row", xs: "column" }}
+          spacing={2}
+          textAlign={"center"}
+        >
+          <HoverScaleUpDown scale={1.02}>
+            <Button
+              variant="contained"
+              sx={{
+                color: "#010101",
+                background: "#C3F53C",
+                borderRadius: "2.5rem",
+                px: 3,
+                py: 1,
+                fontSize: "1.125rem",
+                fontFamily: "Inter",
+                fontWeight: 500,
+              }}
+              endIcon={<EastSharpIcon />}
             >
-              Smarter, Faster, and Safer
-            </Typography>
-            <Typography
-              textAlign="center"
-              fontSize={{ md: "4.25rem", xs: "2.5rem" }}
-              fontWeight={500}
-              fontFamily="Inter"
-              width={{ md: "50%", xs: "100%" }}
-              m="auto"
+              Explore Our Products
+            </Button>
+          </HoverScaleUpDown>
+          <HoverScaleUpDown scale={1.02}>
+            <Button
+              variant="outlined"
+              sx={{
+                color: "#C3F53C",
+                borderColor: "#C3F53C",
+                borderRadius: "2.5rem",
+                px: 3,
+                py: 1,
+                fontSize: "1.125rem",
+                fontFamily: "Inter",
+              }}
+              endIcon={<EastSharpIcon />}
             >
-              Financial Connectivity{" "}
-            </Typography>
-            <Typography
-              textAlign="center"
-              fontSize={{ md: "1.125rem", xs: "0.8rem" }}
-              fontWeight={500}
-              fontFamily="Inter"
-              width={{ md: "50%", xs: "100%" }}
-              m="auto"
-              color="#666D80"
-            >
-              Empowering businesses through secure and intelligent Open Banking
-              APIs.{" "}
-            </Typography>
-            <Box sx={{ mt: 5, width: { xs: "100%", sm: "80%" } }}>
-              <Image
-                src={HomeHeroSectionImage}
-                alt="Home Hero Section Image"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </Box>
-          </Stack>
-        </Card>
-      </SlideUpInView>
-    </Box>
+              Contact Us
+            </Button>
+          </HoverScaleUpDown>
+        </Stack>
+        <Stack sx={{ width: { xs: "100%" } }}>
+          <Image
+            src={HomeHeroSectionImage}
+            alt="Home Hero Section Image"
+            style={{ width: "70%", height: "auto", margin: "auto" }}
+          />
+        </Stack>
+      </Stack>
+    </SlideUpInView>
   );
 };
 

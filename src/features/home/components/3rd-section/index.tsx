@@ -8,6 +8,7 @@ import {
 import Image from "next/image";
 import SlideSidewayInView from "@/components/animations/animation-scroll/slide-sideway-in-view";
 import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
 const HomeThirdSection = () => {
   const data = [
@@ -41,83 +42,40 @@ const HomeThirdSection = () => {
   ];
 
   return (
-    <Box px={{ xs: 2, md: 5, lg: 10 }}>
-      <Grid container spacing={10}>
-        {data.map((item, index) => (
-          <SlideSidewayInView key={item.id} initialX={item?.initialX}>
-            <Grid
-              container
-              spacing={4}
-              direction={{
-                xs: "column",
-                md: index % 2 === 0 ? "row" : "row-reverse",
-              }}
-              alignItems="center"
-              sx={{ m: "auto" }}
-            >
-              {/* Image Section */}
-              <Grid size={{ md: 6, xs: 12 }}>
-                <HoverScaleUpDown scale={1.05}>
-                  <Box
-                    sx={{
-                      width: "100%",
-                      mx: "auto",
-                    }}
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.heading}
-                      style={{
-                        borderRadius: 25,
-                        width: "100%",
-                        height: "auto",
-                      }}
-                    />
-                  </Box>
-                </HoverScaleUpDown>
-              </Grid>
-
-              {/* Text Section */}
-              <Grid size={{ md: 6, xs: 12 }}>
-                <HoverScaleUpDown scale={1.05}>
-                  <Stack spacing={3} mx="auto">
-                    <Stack spacing={0.5}>
-                      <Typography
-                        color="#A97FFF"
-                        fontFamily="Inter"
-                        fontSize="1.25rem"
-                        fontWeight="bold"
-                        textAlign="left"
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
-                        color="#000"
-                        fontFamily="Inter"
-                        fontSize="2.5rem"
-                        fontWeight={600}
-                        textAlign="left"
-                      >
-                        {item.heading}
-                      </Typography>
-                    </Stack>
-                    <Typography
-                      color="#575757"
-                      fontFamily="Inter"
-                      fontSize="1.25rem"
-                      fontWeight={400}
-                      textAlign="left"
-                    >
-                      {item.description}
-                    </Typography>
-                  </Stack>
-                </HoverScaleUpDown>
-              </Grid>
-            </Grid>
-          </SlideSidewayInView>
-        ))}
-      </Grid>
-    </Box>
+    <SlideUpInView initialY={-80}>
+      <Stack
+        spacing={8}
+        alignItems="center"
+        px={{ lg: 4, xs: 3 }}
+        py={8}
+        sx={{ backgroundColor: "#F2F5F7" }}
+      >
+        <Stack
+          sx={{ width: { lg: "90%", xs: "100%" }, color: "#03020C" }}
+          spacing={2}
+        >
+          <Typography
+            textAlign="left"
+            fontSize={{ md: "3.625rem", xs: "1.8rem" }}
+            fontWeight={500}
+            fontFamily="Inter"
+            color="#000"
+          >
+            Who We Serve
+          </Typography>
+          <Typography
+            textAlign="left"
+            fontSize={"1.25rem"}
+            fontWeight={500}
+            fontFamily="Inter"
+            color="#454745"
+            sx={{ width: "40%" }}
+          >
+            {`From disruptive startups to global-scale platforms, Prestige empowers diverse organisations across the financial ecosystem. Whether you're launching, scaling, or transforming  we meet you where you are.`}
+          </Typography>
+        </Stack>
+      </Stack>
+    </SlideUpInView>
   );
 };
 
