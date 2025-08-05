@@ -27,7 +27,7 @@ export const APP_ROUTES = {
   PRODUCT_4: "/accountant-help-squad",
   PRODUCT_5: "/view-all",
   Get_STARTED: "/get-started",
-  Comming_Soon: "/coming-soon",
+  COMING_SOON: "/coming-soon",
 };
 
 export const SOCIAL_ROUTES = {

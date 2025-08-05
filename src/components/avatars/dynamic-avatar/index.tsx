@@ -1,4 +1,5 @@
 "use client";
+
 import { DATA_TYPES } from "@/constants/data-types";
 import { AVATAR_VARIANTS } from "@/constants/ui";
 import { generateImage } from "@/utils/avatars";

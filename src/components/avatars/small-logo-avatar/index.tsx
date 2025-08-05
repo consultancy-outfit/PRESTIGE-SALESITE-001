@@ -1,4 +1,5 @@
 "use client";
+
 import { Avatar, Box } from "@mui/material";
 import { SmallLogoAvatarPropsI } from "../avatars.interface";
 import { PROJECT_NAME } from "@/configs/env";

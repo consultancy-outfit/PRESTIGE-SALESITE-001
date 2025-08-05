@@ -1,4 +1,5 @@
 "use client";
+
 import { AvatarGroup } from "@mui/material";
 import { CommonAvatarGroupPropsI } from "../avatars.interface";
 import { DynamicAvatar } from "../dynamic-avatar";

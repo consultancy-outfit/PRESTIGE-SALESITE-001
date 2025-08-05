@@ -1,4 +1,5 @@
 "use client";
+
 import { Avatar, Box, Typography } from "@mui/material";
 import { useCallback } from "react";
 import { getPreviewImageByType } from "@/utils/avatars";

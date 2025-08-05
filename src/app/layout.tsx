@@ -4,11 +4,8 @@ import RootProvidersLayout from "@/layouts/root-providers-layout";
 import { outfitFontFamily } from "@/assets/fonts/outfit";
 
 export const metadata: Metadata = {
-  title:
-    "Real Money – Instant Payments, Wallets & Smart Financial Tools | Centspay",
-  description: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
-    Save smarter, spend globally, and send money in real-time with full security and control.
-    From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
+  title: "Prestige - Fintech Platform",
+  description: `Explore Prestige’s cutting-edge modular fintech platform designed to power smarter financial operations. Access secure data insights, seamless payments, regulatory compliance, and cash flow tools—built to accelerate your business success.`,
   icons: {
     icon: [
       { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
@@ -33,21 +30,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Real Money – Instant Payments, Wallets & Smart Financial Tools | Centspay",
-    description: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
-      Save smarter, spend globally, and send money in real-time with full security and control.
-      From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
+    title: "Prestige - Fintech Platform",
+    description: ``,
     type: "website",
     images: [
       {
-        url: "https://realmon.netlify.app/og-logo.png",
+        url: "https://prestige.netlify.app/og-logo.png",
         type: "image/png",
         width: 1200,
         height: 630,
-        alt: `Experience Real Money with Centspay, built for instant, cardless payments and seamless digital wallets.
-          Save smarter, spend globally, and send money in real-time with full security and control.
-          From micro-transactions to multi-currency transfers, power your everyday finance effortlessly.`,
+        alt: `Explore Prestige’s cutting-edge modular fintech platform designed to power smarter financial operations. Access secure data insights, seamless payments, regulatory compliance, and cash flow tools—built to accelerate your business success.`,
       },
     ],
   },
