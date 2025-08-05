@@ -4,7 +4,7 @@ import { Stack } from "@mui/material";
 export default function AboutUs() {
   return (
     <Stack alignItems="center">
-      <AboutUsFeature />
+      About us
     </Stack>
   );
 }
