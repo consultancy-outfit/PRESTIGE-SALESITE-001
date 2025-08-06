@@ -49,3 +49,12 @@ export { default as AccountantHelpSquadIcon } from "./AccountantHelpSquadIcon";
 // Accountant Help Squad
 export { default as CareersIcon } from "./CareersIcon";
 export { default as CareersTextIcon } from "./CareersTextIcon";
+
+// Developers
+export { default as DevelopersIcon } from "./DevelopersIcon";
+export { default as DevelopersTextIcon } from "./DevelopersTextIcon";
+
+// Developers
+export { default as UseCasesIcon } from "./UseCasesIcon";
+export { default as UseCasesTextIcon } from "./UseCasesTextIcon";
+export { default as UseCasesGetStartedIcon } from "./UseCasesGetStartedIcon";

@@ -1,7 +1,7 @@
 import { CommonButton } from "@/components/buttons/common-button";
 import { BodyText } from "@/components/text/body-text";
 import { HeadingText } from "@/components/text/heading-text";
-import { Box, Container, Divider } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { GoogleIcon } from "../../assets";
 import { useLoginForm } from "../../hooks/useLoginForm";
 import { CustomFormProvider } from "@/providers/custom-form-provider";
@@ -20,44 +20,27 @@ const LoginForm = () => {
           flexDirection: "column",
         }}
       >
-        <HeadingText variant="h4" color="common.white" customStyles={{ py: 2 }}>
-          Welcome Back to Real Money
+        <HeadingText variant="h4" customStyles={{ py: 2 }}>
+          Welcome back!
         </HeadingText>
         <BodyText
           variant="body2"
           color="grey.400"
-          customStyles={{ lineHeight: 2.5 }}
         >
-          Your gateway to powerful tools, personalised services, and secure
-          management. Enter your credentials below to continue.
+          Please enter your details to get started
         </BodyText>
         <CommonButton
           startIcon={<GoogleIcon />}
           variant="outlined"
           fullWidth
           customStyles={{
-            borderRadius: 8,
+            borderRadius: 2,
             my: 2,
-            backgroundColor: "grey.900",
             opacity: 0.8,
-            color: "common.white",
           }}
         >
           Sign In with Google
         </CommonButton>
-        <Divider
-          sx={{
-            "&::before, &::after": {
-              borderColor: "grey.400",
-            },
-            "& .MuiDivider-wrapper": {
-              color: "grey.400",
-            },
-            mb: 2,
-          }}
-        >
-          Or
-        </Divider>
         <TextFormFields
           name="email"
           label="Email"
@@ -75,7 +58,7 @@ const LoginForm = () => {
         </Box>
         <BodyText
           variant="body2"
-          color="primary.main"
+          color="error.main"
           fontWeight="fontWeightSemiBold"
           customStyles={{ textAlign: "left", mt: 2 }}
         >
@@ -99,7 +82,7 @@ const LoginForm = () => {
           <CustomText
             variant="body2"
             component="span"
-            color="primary.main"
+            color="success.dark"
             fontWeight="fontWeightSemiBold"
           >
             <Link href="/get-started">Create account</Link>
