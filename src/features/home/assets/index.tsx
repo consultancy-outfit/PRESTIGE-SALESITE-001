@@ -43,3 +43,27 @@ export { default as Avatar3 } from "./Avatar (2).png";
 export { default as Avatar4 } from "./Avatar (3).png";
 export { default as Avatar5 } from "./Avatar (4).png";
 export { default as Avatar6 } from "./Avatar (5).png";
+export { default as DataIntelligenceInsightImage } from "./DataIntelligenceInsightImage.svg";
+export { default as CentsPayImage } from "./CentsPayImage.svg";
+export { default as AccountAccessAndConnectivityImage } from "./AccountAccessAndConnectivityImage.svg";
+export { default as PaymentAndmoneyMomentImage } from "./PaymentAndmoneyMomentImage.svg";
+export { default as card1 } from "./card1.svg";
+export { default as card2 } from "./card2.svg";
+export { default as card3 } from "./card3.svg";
+export { default as card4 } from "./card4.svg";
+export { default as FintechInnovatorsIcon } from "./FintechInnovatorsIcon.svg";
+export { default as DigitalBanksIcon } from "./DigitalBanksIcon.svg";
+export { default as AccountingPlatformsIcon } from "./AccountingPlatformsIcon.svg";
+export { default as EnterpriseSaasIcon } from "./EnterpriseSaasIcon.svg";
+export { default as SecurityAndRegulatoryReadinessImage } from "./SecurityAndRegulatoryReadinessImage.svg";
+export { default as WhyChoosePrestigeImage } from "./WhyChoosePrestigeImage.svg";
+export { default as WhyChoosePrestigeIcon } from "./WhyChoosePrestigeIcon.svg";
+export { default as OurTechStackImage } from "./OurTechStackImage.svg";
+export { default as PixelCloudImage } from "./PixelCloudImage.svg";
+export { default as NexoraLTDImage } from "./NexoraLTDImage.svg";
+export { default as RideFlowImage } from "./RideFlowImage.svg";
+export { default as TrademixImage } from "./TrademixImage.svg";
+export { default as SyncoraImage } from "./SyncoraImage.svg";
+
+
+

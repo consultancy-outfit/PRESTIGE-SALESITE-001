@@ -1,11 +1,11 @@
 "use client";
 
-import { FAGlobalLogoImage } from "@/assets/images/logo";
+import { DarkFooterLogoImage } from "@/assets/images/logo";
 // import { Icon5 } from "@/assets/icons/common";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import XIcon from "@mui/icons-material/X";
-import { Box, Grid, Link, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { about, products, resources } from "./footer.data";
@@ -17,17 +17,15 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        bgcolor: "#010101",
-        color: "white",
+        bgcolor: "#F2F5F7",
+        color: "black",
         px: { xs: 5, sm: 10 },
         py: { xs: 3, sm: 5 },
-        m: 2,
-        borderRadius: "12px",
       }}
     >
       <Grid container spacing={4} mb={4}>
         {/* Logo and Description */}
-        <Grid size={{ xs: 12 }}>
+        <Grid size={{ md: 2, xs: 12 }}>
           <Stack
             spacing={2}
             flexDirection={{ xs: "column", sm: "row" }}
@@ -35,20 +33,9 @@ const Footer = () => {
             alignItems={"flex-start"}
           >
             <Stack>
-              <Image src={FAGlobalLogoImage} alt="Logo" />
+              <Image src={DarkFooterLogoImage} alt="Logo" />
             </Stack>
-            <Typography
-              variant="body1"
-              sx={{
-                maxWidth: 550,
-                color: "#ADAEBA",
-                fontFamily: "Manrope",
-                fontSize: 16,
-              }}
-            >
-              A smarter, faster way to connect, manage, and move money across
-              accounts, currencies, and customers in real time.
-            </Typography>
+
             {/* <Stack direction="row" spacing={2} mt={2}>
               <IconButton
                 color="inherit"
@@ -77,15 +64,13 @@ const Footer = () => {
             </Stack> */}
           </Stack>
         </Grid>
-
-        <Grid size={{ md: 2 }} display={{ xs: "none", md: "block" }}></Grid>
         {/* Products */}
         <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
-            color="#F6F7FF"
+            color="#000000"
             fontFamily="Manrope"
-            fontWeight={500}
+            fontWeight={600}
           >
             Products
           </Typography>
@@ -93,7 +78,7 @@ const Footer = () => {
             <Typography
               key={item?.id}
               variant="body1"
-              color="#D2D3DF"
+              color="#000000"
               fontFamily="Manrope"
               sx={{ mt: 1.5, cursor: "pointer" }}
               onClick={() => {
@@ -109,9 +94,9 @@ const Footer = () => {
         <Grid size={{ md: 2, xs: 6 }}>
           <Typography
             variant="subtitle1"
-            color="#F6F7FF"
+            color="#000000"
             fontFamily="Manrope"
-            fontWeight={500}
+            fontWeight={600}
           >
             Company
           </Typography>
@@ -119,7 +104,7 @@ const Footer = () => {
             <Typography
               key={item?.id}
               variant="body1"
-              color="#D2D3DF"
+              color="#000000"
               fontFamily="Manrope"
               sx={{ mt: 1.5, cursor: "pointer" }}
               onClick={() => {
@@ -135,9 +120,9 @@ const Footer = () => {
         <Grid size={{ md: 2, xs: 6 }}>
           <Typography
             variant="subtitle1"
-            color="#F6F7FF"
+            color="#000000"
             fontFamily="Manrope"
-            fontWeight={500}
+            fontWeight={600}
           >
             Resources
           </Typography>
@@ -145,7 +130,7 @@ const Footer = () => {
             <Typography
               key={item?.id}
               variant="body1"
-              color="#D2D3DF"
+              color="#000000"
               fontFamily="Manrope"
               sx={{ mt: 1.5, cursor: "pointer" }}
               onClick={() => {
@@ -161,24 +146,24 @@ const Footer = () => {
         <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
-            color="#F6F7FF"
+            color="#000000"
             fontFamily="Manrope"
-            fontWeight={500}
+            fontWeight={600}
           >
             Support
           </Typography>
           <Typography
             variant="body1"
             sx={{ mt: 1.5, cursor: "pointer" }}
-            color="#D2D3DF"
+            color="#000000"
             fontFamily="Manrope"
           >
-            Email: info@realmoney.co.uk
+            Email: info@prestige.co.uk
           </Typography>
           <Typography
             variant="body1"
             sx={{ mt: 1.5, cursor: "pointer" }}
-            color="#D2D3DF"
+            color="#000000"
             fontFamily="Manrope"
           >
             Address: 30 Churchill Place, London, England, E14 5RE
@@ -191,44 +176,17 @@ const Footer = () => {
       <Box
         mt={3}
         display="flex"
-        justifyContent="space-between"
+        justifyContent="center"
         flexDirection={{ xs: "column", sm: "row" }}
         alignItems={{ xs: "flex-start", sm: "center" }}
         gap={2}
       >
         <Typography
           variant="body1"
-          sx={{ color: "#EEEFFB", fontFamily: "Manrope" }}
+          sx={{ color: "#000000", fontFamily: "Manrope" }}
         >
-          All Rights Reserved. Copyright © {currentYear} Real Money.
+          Copyright © Prestige {currentYear}. All rights reserved.
         </Typography>
-        <Stack direction="row" spacing={1}>
-          <Link
-            href="/privacy-policy"
-            color="inherit"
-            sx={{
-              color: "#EEEFFB",
-              fontFamily: "Manrope",
-              fontSize: 16,
-              textDecoration: "none",
-            }}
-          >
-            Privacy Policy
-          </Link>
-          <Typography>|</Typography>
-          <Link
-            href="/terms-and-conditions"
-            color="inherit"
-            sx={{
-              color: "#EEEFFB",
-              fontFamily: "Manrope",
-              fontSize: 16,
-              textDecoration: "none",
-            }}
-          >
-            Terms & Conditions
-          </Link>
-        </Stack>
       </Box>
     </Box>
   );
