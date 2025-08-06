@@ -44,3 +44,8 @@ export { default as PeerToPeerTransfersIcon } from "./PeerToPeerTransfersIcon";
 
 // Accountant Help Squad
 export { default as AccountantHelpSquadIcon } from "./AccountantHelpSquadIcon";
+
+
+// Accountant Help Squad
+export { default as CareersIcon } from "./CareersIcon";
+export { default as CareersTextIcon } from "./CareersTextIcon";

@@ -1,7 +1,7 @@
 const primary = {
-  main: "#47D3FF",
+  main: "#C3F53C",
   light: `#6E7191`,
-  dark: "#47D3FF",
+  dark: "#C3F53C",
   lighter: "#6E7191",
 };
 

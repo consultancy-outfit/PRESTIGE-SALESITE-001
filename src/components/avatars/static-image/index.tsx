@@ -1,4 +1,5 @@
 "use client";
+
 import { AVATAR_VARIANTS } from "@/constants/ui";
 import { StaticImagePropsI } from "../avatars.interface";
 import Image from "next/image";
