@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import "@/styles/globals.css";
-import RootProvidersLayout from "@/layouts/root-providers-layout";
 import { outfitFontFamily } from "@/assets/fonts/outfit";
+import RootProvidersLayout from "@/layouts/root-providers-layout";
+import "@/styles/globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Prestige - Fintech Platform",

@@ -1,4 +1,5 @@
 "use client";
+
 import { Box, Typography, SxProps, Theme } from "@mui/material";
 import SlideUpInView from "../animations/animation-scroll/slide-up-in-view";
 
