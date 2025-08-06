@@ -12,8 +12,8 @@ import {
   useTheme,
 } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import { HeroImage } from "../../assets";
+import { AboutIcon, RealMoneyChooseUsIcon } from "../../assets/icons";
 
 const Hero: React.FC = () => {
   const theme = useTheme();
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
     <Box
       component="section"
       sx={{
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: "#010101",
         py: { xs: 6, md: 12 },
       }}
     >
@@ -33,10 +33,8 @@ const Hero: React.FC = () => {
           alignItems="center"
           justifyContent="space-between"
         >
-          {/* LEFT: Text content */}
-          <Grid size={{xs:12,md:6}}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Stack spacing={3}>
-              {/* small pill + About Us */}
               <Stack direction="row" spacing={2} alignItems="center">
                 <Box
                   sx={{
@@ -48,12 +46,17 @@ const Hero: React.FC = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <GroupOutlinedIcon sx={{ color: "white", fontSize: 20 }} />
+                  <AboutIcon />
                 </Box>
 
                 <Typography
                   variant="body1"
-                  sx={{ color: "primary.main", fontWeight: "bold" }}
+                  sx={{
+                    color: "primary.main",
+                    fontWeight: "bold",
+                    borderBottom: "2px solid",
+                    borderColor: "primary.main",
+                  }}
                 >
                   About Us
                 </Typography>
@@ -62,12 +65,12 @@ const Hero: React.FC = () => {
               {/* Heading */}
               <Typography
                 variant="h1"
-                component="h2"
                 sx={{
                   maxWidth: 600,
                   fontSize: { xs: "2rem", sm: "2.6rem", md: "3rem" },
                   lineHeight: 1.05,
                   fontWeight: 700,
+                  color: "common.white",
                 }}
               >
                 Where Intelligence Meets Integrity
@@ -76,7 +79,7 @@ const Hero: React.FC = () => {
               {/* Paragraph 1 */}
               <Typography
                 variant="body1"
-                sx={{ color: "text.secondary", maxWidth: 600 }}
+                sx={{ color: "common.white", maxWidth: 600 }}
               >
                 Prestige empowers financial organisations with intelligent,
                 modular tools that simplify complexity, ensure compliance, and
@@ -86,7 +89,7 @@ const Hero: React.FC = () => {
               {/* Paragraph 2 */}
               <Typography
                 variant="body1"
-                sx={{ color: "text.secondary", maxWidth: 600 }}
+                sx={{ color: "common.white", maxWidth: 600 }}
               >
                 We deliver precision-built infrastructure for businesses who
                 demand more from their data, their partners, and their
@@ -102,15 +105,18 @@ const Hero: React.FC = () => {
               >
                 <Button
                   variant="contained"
-                  startIcon={<CheckCircleOutlineIcon />}
+                  startIcon={<RealMoneyChooseUsIcon />}
                   sx={{
-                    backgroundColor: "primary.main",
+                    backgroundColor: "#1C1C1C",
+                    color: "#FFFFFF",
+                    borderRadius: "30px",
                     textTransform: "none",
-                    py: 1.1,
-                    px: 2.5,
+                    padding: "1.1em 2.5em",
                     fontWeight: 600,
+                    boxShadow: "none",
                     "&:hover": {
-                      backgroundColor: "primary.dark",
+                      backgroundColor: "#2C2C2C",
+                      boxShadow: "none",
                     },
                   }}
                 >
@@ -121,7 +127,7 @@ const Hero: React.FC = () => {
           </Grid>
 
           {/* RIGHT: Image */}
-          <Grid size={{xs:12,md:6}}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
                 width: "100%",

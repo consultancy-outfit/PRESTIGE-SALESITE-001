@@ -14,15 +14,12 @@ const ContactUs = () => {
       {/* Main content container */}
       <Box
         sx={{
-          backgroundColor: '#1A1A1A', // Darker background for the main card
-          borderRadius: '1.5rem', // Rounded corners
-          borderBottomLeftRadius: '1.5rem', // Ensure rounded bottom
+          backgroundColor: '#1A1A1A', 
+          borderRadius: '1.5rem', 
+          borderBottomLeftRadius: '1.5rem', 
           borderBottomRightRadius: '1.5rem',
-          padding: { xs: '2rem', sm: '3rem', md: '4rem' }, // Responsive padding
+          padding: { xs: '2rem', sm: '3rem', md: '4rem' },
           textAlign: 'center',
-          maxWidth: '900px', // Max width for content
-          width: '90%', // Fluid width
-          boxShadow: '0 10px 15px rgba(0,0,0,0.2)', // Subtle shadow
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -36,7 +33,7 @@ const ContactUs = () => {
             color: '#A4F03F', // Green color
             fontWeight: '600',
             marginBottom: '1rem',
-            fontSize: { xs: '0.9rem', sm: '1rem' }, // Responsive font size
+            fontSize: { xs: '0.9rem', sm: '1rem' }, 
           }}
         >
           Ready to get started?
@@ -50,7 +47,7 @@ const ContactUs = () => {
             color: '#FFFFFF', // White text
             fontWeight: 'bold',
             marginBottom: '2.5rem',
-            fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' }, // Responsive font size
+            fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' }, 
             lineHeight: { xs: '1.3', sm: '1.4' }, // Responsive line height
             maxWidth: '700px', // Limit width of the quote for readability
           }}
@@ -69,7 +66,7 @@ const ContactUs = () => {
             padding: { xs: '0.75rem 1.5rem', sm: '1rem 2rem' }, // Responsive padding
             textTransform: 'none', // Prevent uppercase text
             fontWeight: 'bold',
-            fontSize: { xs: '1rem', sm: '1.1rem' }, // Responsive font size
+            fontSize: { xs: '1rem', sm: '1.1rem' }, 
             boxShadow: 'none', // Remove default MUI shadow
             '&:hover': {
               backgroundColor: '#8FD930', // Slightly darker green on hover

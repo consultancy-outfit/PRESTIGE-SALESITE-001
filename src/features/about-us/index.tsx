@@ -10,10 +10,7 @@ export const AboutUsFeature = () => {
   return (
     <>
       <Box
-        sx={{
-          // backgroundColor: "#010101",
-          mb:4
-        }}
+        
       >
         <Hero/>
         <OurMission/>
