@@ -159,7 +159,7 @@ function ProductNewFeature() {
           height: "100%",
           pb: { xs: 8 },
           pt: 5,
-          px: { xs: 3, lg: 7 },
+          px: { xs: 3, lg: 20 },
         }}
       >
         <Grid container spacing={3}>
@@ -277,7 +277,7 @@ function ProductNewFeature() {
           height: "100%",
           pb: { xs: 8 },
           pt: 5,
-          px: { xs: 3, lg: 7 },
+          px: { xs: 3, lg: 20 },
         }}
       >
         <Stack gap={2} alignItems={"flex-start"}>
