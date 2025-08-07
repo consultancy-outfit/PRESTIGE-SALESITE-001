@@ -1,24 +1,34 @@
 "use client";
 
 import { Box } from "@mui/material";
-import { Hero, OurMission } from "./components";
-import OurApproachCombined from "./components/our-aproach";
-import OurLeadership from "./components/our-leadership";
-import WhatWeDo from "./components/what-we-do";
-import ContactUs from "./components/contact-us";
+import { Hero } from "./components";
+import AboutUsList from "./components/about-us-list";
+import { RealMoneyMeetTeam } from "./components/real-money-meet-team";
+import { WhatWeDoRealMoney } from "./components/what-we-do-real-money";
+import { ReadyToGetStarted } from "@/components/ready-to-get-started";
+
 export const AboutUsFeature = () => {
   return (
     <>
       <Box
-        
+        sx={{
+          backgroundColor: "#010101",
+          mb: 4,
+        }}
       >
-        <Hero/>
-        <OurMission/>
-        <OurApproachCombined/>
-        <OurLeadership/>
-        <WhatWeDo/>
-        <ContactUs/>
-       
+        <Hero />
+        <Box sx={{ my: 3 }}>
+          <WhatWeDoRealMoney />
+        </Box>
+        <Box sx={{ my: 3 }}>
+          <AboutUsList />
+        </Box>
+        <Box sx={{ my: 3 }}>
+          <RealMoneyMeetTeam />
+        </Box>
+        <Box sx={{ my: 3 }}>
+          <ReadyToGetStarted />
+        </Box>
       </Box>
     </>
   );
