@@ -1,62 +1,99 @@
+"use client";
+
+import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { OurMissionImage } from "../../assets";
-import { ContainerGridLayout } from "@/components/layouts/container-grid-layout";
-import { ItemGridLayout } from "@/components/layouts/item-grid-layout";
-import { BodyText } from "@/components/text/body-text";
-import { GradientHeadingBlock } from "@/components/gradient-heading-block/gradient-heading-block";
-import { LinkButton } from "@/components/buttons/link-button";
-import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
-import { APP_ROUTES } from "@/constants/routes";
+import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 
-const OurMission = () => {
+const OurMission: React.FC = () => {
   return (
-    <ContainerGridLayout customStyles={{ mx: "100px" }}>
-      <ItemGridLayout md={6} xs={12}>
-        <ScaleInView>
-          <Image
-            src={OurMissionImage}
-            alt="OurMission"
-            style={{ width: "100%", height: "auto" }}
-          />
-        </ScaleInView>
-      </ItemGridLayout>
-      <ItemGridLayout
-        xs={12}
-        md={4}
-        lg={4}
-        customStyles={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "30px",
-          mt: "50px",
-        }}
-      >
-        <GradientHeadingBlock
-          headingStart="Our"
-          highlightText="Mission & Vision"
-        />
-        <BodyText
-          variant="body1"
-          marginBottom={2}
-          customStyles={{ maxWidth: "500px" }}
+    <Box
+      sx={{
+        backgroundColor: "#f5f5f5",
+        padding: { xs: "24px", md: "48px" },
+      }}
+    >
+      <SlideUpInView>
+        <Stack
+          sx={{
+            textAlign: "center",
+            maxWidth: "100%",
+            mx: "auto",
+          }}
         >
-          To simplify and secure the identity verification process for
-          businesses worldwide, helping them build trust, meet compliance
-          requirements, and create frictionless user experiences.
-        </BodyText>
-        <BodyText variant="body1" customStyles={{ maxWidth: "500px" }}>
-          To become the most reliable and intelligent global verification
-          platform that empowers every digital interaction with trust and
-          transparency.
-        </BodyText>
-        <LinkButton
-          customStyles={{ bgcolor: "text.primary", borderRadius: "10px" }}
-          link={APP_ROUTES?.CONTACT_US}
-        >
-          Join Our Team
-        </LinkButton>
-      </ItemGridLayout>
-    </ContainerGridLayout>
+          <Typography
+            textAlign="center"
+            fontSize={"1.125rem"}
+            fontWeight={500}
+            fontFamily="Inter"
+            color="#080808"
+            sx={{
+              textDecoration: "underline",
+              textDecorationColor: "#C3F53C",
+            }}
+          >
+            Our Mission
+          </Typography>
+
+          <Typography
+            variant="h3"
+            fontSize={{ md: "3.625rem", xs: "2.5rem" }}
+            fontWeight={500}
+            fontFamily="Inter"
+            color="#080808"
+            sx={{
+              mt: "19px",
+              maxWidth: 1000,
+              mx: "auto",
+              lineHeight: 1.08,
+              mb: 2,
+            }}
+          >
+            Precision-built tools for the next generation of finance
+          </Typography>
+
+          <Typography
+            variant="body1"
+            fontSize="1.125rem"
+            fontFamily="Inter"
+            sx={{
+              maxWidth: 960,
+              mx: "auto",
+              color: "#454745",
+              lineHeight: 1.6,
+              mb: "24px",
+            }}
+          >
+            Our mission is to enable smarter financial systems through
+            innovation, trust, and performance. We help companies unlock deeper
+            insights, accelerate transactions, and build trusted relationships
+            with users all within a secure, compliant ecosystem. At Prestige, we
+            don't just follow the future of finance — we build it.
+          </Typography>
+
+          <Box
+            sx={{
+              mt: 4,
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
+              position: "relative",
+              width: "100%",
+              height: "auto",
+              aspectRatio: "16 / 4",
+              marginBottom:" 24px",
+            }}
+          >
+            <Image
+              src={OurMissionImage}
+              alt="Precision-built tools for finance"
+              style={{ width: "100%", height: "450px", objectFit: "cover" }}
+            />
+          </Box>
+        </Stack>
+      </SlideUpInView>
+    </Box>
   );
 };
 
