@@ -20,6 +20,7 @@ export { default as NoteIcon } from "./note-icon";
 export { default as TikTokIcon } from "./tiktok-icon";
 export { default as YoutubeIcon } from "./youtube-icon";
 export { default as Icon5 } from "./icon5.svg";
+
 // Core Services
 export { default as RiskCreditScoringIcon } from "./RiskCreditScoringIcon";
 export { default as IncomeExpenseInsightsIcon } from "./IncomeExpenseInsightsIcon";
@@ -45,7 +46,6 @@ export { default as PeerToPeerTransfersIcon } from "./PeerToPeerTransfersIcon";
 // Accountant Help Squad
 export { default as AccountantHelpSquadIcon } from "./AccountantHelpSquadIcon";
 
-
 // Accountant Help Squad
 export { default as CareersIcon } from "./CareersIcon";
 export { default as CareersTextIcon } from "./CareersTextIcon";
@@ -58,3 +58,9 @@ export { default as DevelopersTextIcon } from "./DevelopersTextIcon";
 export { default as UseCasesIcon } from "./UseCasesIcon";
 export { default as UseCasesTextIcon } from "./UseCasesTextIcon";
 export { default as UseCasesGetStartedIcon } from "./UseCasesGetStartedIcon";
+
+// Products
+export { default as CheckedIcon } from "./checkedIcon";
+export { default as TextUnderscoreIcon } from "./textUnderscoreIcon";
+export { default as AccountAccessProductIcon } from "./AccountAccessProductIcon";
+export { default as AccountAccessProductTextIcon } from "./AccountAccessProductTextIcon";
