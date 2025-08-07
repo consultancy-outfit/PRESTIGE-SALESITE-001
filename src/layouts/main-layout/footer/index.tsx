@@ -76,7 +76,7 @@ const Footer = () => {
           </Typography>
           {products.map((item) => (
             <Typography
-              key={item?.id}
+              key={item?.label + item?.id}
               variant="body1"
               color="#000000"
               fontFamily="Manrope"
@@ -102,7 +102,7 @@ const Footer = () => {
           </Typography>
           {about.map((item) => (
             <Typography
-              key={item?.id}
+               key={item?.label+item?.id}
               variant="body1"
               color="#000000"
               fontFamily="Manrope"
@@ -128,7 +128,7 @@ const Footer = () => {
           </Typography>
           {resources.map((item) => (
             <Typography
-              key={item?.id}
+              key={item?.label+item?.id}
               variant="body1"
               color="#000000"
               fontFamily="Manrope"
