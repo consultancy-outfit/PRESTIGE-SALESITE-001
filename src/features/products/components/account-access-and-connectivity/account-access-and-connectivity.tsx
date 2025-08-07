@@ -22,7 +22,7 @@ export const AccountAccessAndConnectivity = () => {
         "Give users real-time access to their financial data across multiple bank accounts. AIS enables direct connectivity to banking infrastructure, making it easy to retrieve balances, transactions, and account details with full user consent.",
       innerValues: [
         {
-          liTitle: "Strategic Value:",
+          liTitle: "What It Delivers:",
           liList: [
             "Multi-bank account aggregation",
             "Real-time balance and transaction retrieval",
@@ -104,28 +104,26 @@ export const AccountAccessAndConnectivity = () => {
   ];
 
   return (
-    <>
-      <ProductDetailPagesCommon
-        PageIcon={AccountAccessProductIcon}
-        PageName={AccountAccessProductTextIcon}
-        PageTitle={
-          <>
-            Seamless, Secure Access to <br /> What Matters Most
-          </>
-        }
-        PageDescription={
-          <>
-            Empower users to control their financial data with precision and
-            trust. Our access tools are <br />
-            designed for real-time bank connectivity, secure authorisations, and
-            consent-first <br />
-            experiences — all under full regulatory compliance.
-          </>
-        }
-        PageHeaderImage={SecureAccessImage}
-        gridContent={gridContent}
-      />
-    </>
+    <ProductDetailPagesCommon
+      PageIcon={AccountAccessProductIcon}
+      PageName={AccountAccessProductTextIcon}
+      PageTitle={
+        <>
+          Seamless, Secure Access to <br /> What Matters Most
+        </>
+      }
+      PageDescription={
+        <>
+          Empower users to control their financial data with precision and
+          trust. Our access tools are <br />
+          designed for real-time bank connectivity, secure authorisations, and
+          consent-first <br />
+          experiences — all under full regulatory compliance.
+        </>
+      }
+      PageHeaderImage={SecureAccessImage}
+      gridContent={gridContent}
+    />
   );
 };
 

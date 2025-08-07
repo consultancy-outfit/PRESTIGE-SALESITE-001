@@ -1,10 +1,10 @@
 export const products = [
-  { id: 1, link: "#", label: "Data Intelligence & Insights" },
-  { id: 2, link: "#", label: "Payments & Money Movement" },
-  { id: 3, link: "#", label: "Account Access & Connectivity" },
-  { id: 4, link: "#", label: "Identity & Regulatory Compliance" },
-  { id: 4, link: "#", label: "Accountant HelpSquad" },
-  { id: 4, link: "#", label: "Centspay" },
+  { id: 1, link: "/products/data-intelligence-and-insights", label: "Data Intelligence & Insights" },
+  { id: 2, link: "/products/payments-and-money-movement", label: "Payments & Money Movement" },
+  { id: 3, link: "/products/account-access-and-connectivity", label: "Account Access & Connectivity" },
+  { id: 4, link: "/products/identity-and-regulatory-compliance", label: "Identity & Regulatory Compliance" },
+  { id: 4, link: "/products/accountant-help-squad", label: "Accountant HelpSquad" },
+  { id: 4, link: "/products/centspay", label: "Centspay" },
 ];
 
 export const about = [
