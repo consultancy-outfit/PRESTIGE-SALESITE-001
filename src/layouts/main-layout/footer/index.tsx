@@ -25,7 +25,7 @@ const Footer = () => {
     >
       <Grid container spacing={4} mb={4}>
         {/* Logo and Description */}
-        <Grid size={{ md: 2, xs: 12 }}>
+        <Grid size={{ md: 3, xs: 12 }}>
           <Stack
             spacing={2}
             flexDirection={{ xs: "column", sm: "row" }}
@@ -65,7 +65,7 @@ const Footer = () => {
           </Stack>
         </Grid>
         {/* Products */}
-        <Grid size={{ md: 2, xs: 12 }}>
+        <Grid size={{ md: 3, xs: 12 }}>
           <Typography
             variant="subtitle1"
             color="#000000"
@@ -91,7 +91,7 @@ const Footer = () => {
         </Grid>
 
         {/* Company */}
-        <Grid size={{ md: 2, xs: 6 }}>
+        <Grid size={{ md: 3, xs: 6 }}>
           <Typography
             variant="subtitle1"
             color="#000000"
@@ -117,7 +117,7 @@ const Footer = () => {
         </Grid>
 
         {/* Resources */}
-        <Grid size={{ md: 2, xs: 6 }}>
+        <Grid size={{ md: 3, xs: 6 }}>
           <Typography
             variant="subtitle1"
             color="#000000"
@@ -143,7 +143,7 @@ const Footer = () => {
         </Grid>
 
         {/* Support */}
-        <Grid size={{ md: 2, xs: 12 }}>
+        {/* <Grid size={{ md: 2, xs: 12 }}>
           <Typography
             variant="subtitle1"
             color="#000000"
@@ -168,7 +168,7 @@ const Footer = () => {
           >
             Address: 30 Churchill Place, London, England, E14 5RE
           </Typography>
-        </Grid>
+        </Grid> */}
       </Grid>
 
       {/* Bottom bar */}
