@@ -1,31 +1,29 @@
+import { pro10 } from "@/assets/images/common/images";
+import Iconab1 from "@/assets/images/common/images/icon-ab1";
+import Iconab2 from "@/assets/images/common/images/icon-ab2";
+import Iconab3 from "@/assets/images/common/images/icon-ab3";
+import IconAb4 from "@/assets/images/common/images/icon-ab4";
+import Iconab6 from "@/assets/images/common/images/icon-ab5";
+import Iconab7 from "@/assets/images/common/images/icon-ab7";
+import Iconab8 from "@/assets/images/common/images/icon-ab9";
+import { Box, Container, Grid, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Box, Typography, Grid, Paper } from "@mui/material";
-import {
-  BusinessCenterOutlined,
-  VerifiedUserOutlined,
-  LightbulbOutlined,
-  PeopleOutlined,
-  LockOutlined,
-  FingerprintOutlined,
-  GavelOutlined,
-  SecurityOutlined,
-} from "@mui/icons-material";
 
 const securityFeatures = [
   {
-    icon: <LockOutlined sx={{ fontSize: 24, color: "#16A34A" }} />,
+    icon: Iconab1,
     title: "Protected",
     description:
       "Your money is held securely in a ring-fenced account. You can access your funds whenever you like, and they're never invested or lent to anyone else.",
   },
   {
-    icon: <FingerprintOutlined sx={{ fontSize: 24, color: "#16A34A" }} />,
+    icon: Iconab2,
     title: "Authenticated",
     description:
       "Your data is stored and protected by two and multiple layers of authentication. Two-factor authentication is enabled on your account for added security.",
   },
   {
-    icon: <GavelOutlined sx={{ fontSize: 24, color: "#16A34A" }} />,
+    icon: Iconab3,
     title: "Licensed and Regulated",
     description:
       "Payments comply with regulations and industry standards in the many countries around the world where we operate.",
@@ -34,24 +32,26 @@ const securityFeatures = [
 
 const deliverFeatures = [
   {
-    icon: <BusinessCenterOutlined sx={{ fontSize: 40, color: "#16A34A" }} />,
+    icon: <IconAb4 sx={{ fontSize: 40 }} />,
     title: "Enterprise-Ready",
     description: "Built for scale, security, and real-world complexity.",
   },
   {
-    icon: <VerifiedUserOutlined sx={{ fontSize: 40, color: "#16A34A" }} />,
+    icon: <Iconab6 sx={{ fontSize: 40 }} />,
     title: "Trust by Design",
     description: "Compliant, secure, and aligned with PSD2/PCI DSS standards.",
   },
   {
-    icon: <LightbulbOutlined sx={{ fontSize: 40, color: "#16A34A" }} />,
+    icon: <Iconab7 sx={{ fontSize: 40 }} />,
     title: "Insight-Driven",
-    description: "Data isn't just collected — it's transformed into opportunity.",
+    description:
+      "Data isn't just collected — it's transformed into opportunity.",
   },
   {
-    icon: <PeopleOutlined sx={{ fontSize: 40, color: "#16A34A" }} />,
+    icon: <Iconab8 sx={{ fontSize: 40 }} />,
     title: "User-Centric",
-    description: "We put stability and experience at the heart of every product.",
+    description:
+      "We put stability and experience at the heart of every product.",
   },
 ];
 
@@ -59,146 +59,110 @@ const WhatWeDo: React.FC = () => {
   return (
     <Box sx={{ fontFamily: "Inter, sans-serif" }}>
       {/* Bank-level Security Section */}
-      <Box
+      <Container
+        maxWidth="xl"
         sx={{
-          backgroundColor: "black",
-          color: "white",
-          py: { xs: 8, sm: 12, lg: 16 },
-          px: { xs: 2, sm: 3, lg: 4 },
+          pt: 5,
         }}
       >
-        <Box sx={{ maxWidth: "1280px", mx: "auto" }}>
-          <Typography
-            variant="h4"
-            component="h2"
-            sx={{
-              fontWeight: 800,
-              mb: { xs: 6, sm: 8, md: 12 },
-              textAlign: { xs: "center", lg: "left" },
-              fontSize: { xs: "1.875rem", sm: "2.25rem", md: "3rem" },
-              lineHeight: { xs: "2.25rem", sm: "2.5rem", md: 1 },
-            }}
-          >
-            Bank-level Security
-          </Typography>
+        <Typography
+          variant="h4"
+          component="h2"
+          color="#FFFFFF"
+          sx={{
+            fontWeight: 800,
+          }}
+        >
+          <Box component="span" sx={{ color: "#C3F53C" }}>
+            Bank-level
+          </Box>{" "}
+          Security
+        </Typography>
 
-<Grid container spacing={6} alignItems="center">
-  {/* Features List */}
-  <Grid size={{xs:12,lg:6}}>
-    <Grid container spacing={4}>
-      {securityFeatures.map((feature, index) => (
-        <Grid size={12} key={index}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "flex-start",
-              gap: 2,
-              textAlign: { xs: "center", sm: "left" },
-            }}
-          >
-            <Box sx={{ flexShrink: 0, mt: 0.25 }}>{feature.icon}</Box>
-            <Box>
-              <Typography
-                variant="h6"
-                component="h3"
+        <Grid container>
+          {/* Features List */}
+          <Grid size={{ xs: 12, lg: 6 }} alignItems={"center"}>
+            <Stack mt={5} gap={3}>
+              {securityFeatures.map((feature, index) => (
+                <Stack
+                  key={index}
+                  flexDirection={"row"}
+                  alignItems="flex-start"
+                  gap={2}
+                >
+                  <feature.icon sx={{ fontSize: "40px" }} />
+                  <Stack key={index} gap={1}>
+                    <Typography
+                      variant="body1"
+                      fontWeight={500}
+                      fontSize={24}
+                      color="#FFFFFF"
+                    >
+                      {feature.title}
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      fontWeight={400}
+                      fontSize={18}
+                      color="#FFFFFF"
+                    >
+                      {feature.description}
+                    </Typography>
+                  </Stack>
+                </Stack>
+              ))}
+            </Stack>
+          </Grid>
+
+          {/* Large Shield Icon */}
+          <Grid size={{ xs: 12, lg: 6 }}>
+            <Stack alignItems={"center"} width={"100%"}>
+              <Box
                 sx={{
-                  fontWeight: 600,
-                  mb: 0.5,
-                  fontSize: { xs: "1.125rem", sm: "1.25rem" },
+                  width: "100%",
+                  height: 600,
+                  backgroundImage: `url(${pro10.src})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  borderRadius: 2,
+                  boxShadow: 3,
+                  display: "block",
+                  margin: { xs: "auto", md: "unset" },
+                  py: 2,
                 }}
-              >
-                {feature.title}
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "text.secondary",
-                  fontSize: { xs: "0.875rem", sm: "1rem" },
-                }}
-              >
-                {feature.description}
-              </Typography>
-            </Box>
-          </Box>
+              />
+            </Stack>
+          </Grid>
         </Grid>
-      ))}
-    </Grid>
-  </Grid>
-
-  {/* Large Shield Icon */}
-  <Grid size={{xs:12,lg:6}}>
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Box
-        sx={{
-          position: "relative",
-          width: "100%",
-          maxWidth: "400px",
-          height: { xs: 256, sm: 320, lg: 384 },
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#16A34A",
-          borderRadius: "50%",
-          boxShadow: "0 0 50px rgba(22, 163, 74, 0.7)",
-        }}
-        aria-hidden
-      >
-        <SecurityOutlined
-          sx={{
-            fontSize: { xs: 120, sm: 160, md: 200 },
-            color: "white",
-          }}
-        />
-        <Box
-          sx={{
-            position: "absolute",
-            inset: 0,
-            border: "2px dashed rgba(255, 255, 255, 0.3)",
-            borderRadius: "50%",
-            transform: "scale(1.2)",
-          }}
-        />
-      </Box>
-    </Box>
-  </Grid>
-</Grid>
-
-        </Box>
-      </Box>
-
+      </Container>
       {/* What We Deliver Section */}
       <Box
         sx={{
-          py: { xs: 8, sm: 12, lg: 16 },
-          px: { xs: 2, sm: 3, lg: 4 },
-          backgroundColor: "grey.50",
+          bgcolor: "#FFFFFF",
+          height: "100%",
+          pb: { xs: 8 },
+          pt: 5,
+          px: { xs: 3, lg: 7 },
         }}
       >
-        <Box sx={{ maxWidth: "1280px", mx: "auto", textAlign: "center" }}>
+        <Stack alignItems={"center"} gap={2} sx={{ mx: "auto" }}>
           <Typography
-            variant="overline"
+            variant="body1"
+            color="#080808"
+            fontSize={18}
             sx={{
-              color: "success.main",
-              fontWeight: 600,
-              mb: 1,
-              fontSize: { xs: "0.75rem", sm: "0.875rem" },
-              letterSpacing: "0.1em",
+              borderBottom: "2px solid #C3F53C",
             }}
           >
-            What We Deliver
+            Join the Prestige Network
           </Typography>
 
           <Typography
             variant="h4"
             component="h2"
             sx={{
-              color: "grey.900",
+              color: "#080808",
               fontWeight: 800,
               mb: { xs: 6, sm: 8, md: 12 },
               fontSize: { xs: "1.875rem", sm: "2.25rem", md: "3rem" },
@@ -213,7 +177,7 @@ const WhatWeDo: React.FC = () => {
               If you prefer 2-col only from md, change sm={6} to md={6}. */}
           <Grid container spacing={4} justifyContent="center">
             {deliverFeatures.map((feature, index) => (
-              <Grid size={{xs:12,lg:6}}key={index}>
+              <Grid size={{ xs: 12, lg: 6 }} key={index}>
                 <Paper
                   elevation={0}
                   sx={{
@@ -234,8 +198,8 @@ const WhatWeDo: React.FC = () => {
                     <Typography
                       variant="h6"
                       component="h3"
+                      color="#080808"
                       sx={{
-                        color: "grey.900",
                         fontWeight: 600,
                         mb: 1,
                         fontSize: { xs: "1.125rem", sm: "1.25rem" },
@@ -245,8 +209,8 @@ const WhatWeDo: React.FC = () => {
                     </Typography>
                     <Typography
                       variant="body1"
+                      color="#454745"
                       sx={{
-                        color: "grey.600",
                         fontSize: { xs: "0.875rem", sm: "1rem" },
                       }}
                     >
@@ -257,7 +221,7 @@ const WhatWeDo: React.FC = () => {
               </Grid>
             ))}
           </Grid>
-        </Box>
+        </Stack>
       </Box>
     </Box>
   );

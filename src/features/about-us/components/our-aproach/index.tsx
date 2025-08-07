@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
+import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import React from "react";
 import { AproachImageOne, AproachImageTwo } from "../../assets";
-import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import IconTick from "@/assets/images/common/images/icon-tick";
 const data = [
   "Go beyond transactions with enriched data, scoring, and insights",
   "Intelligent systems that learn, adapt, and inform smarter decision-making",
@@ -18,7 +18,7 @@ const OurApproachCombined: React.FC = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#111827",
+        backgroundColor: "#080808",
         color: "white",
         padding: { xs: "24px", md: "48px", lg: "80px" },
       }}
@@ -66,13 +66,13 @@ const OurApproachCombined: React.FC = () => {
                 lineHeight: 1.6,
               }}
             >
-              Prestige delivers modular fintech infrastructure tailored to
+              {`Prestige delivers modular fintech infrastructure tailored to
               modern financial ecosystems. Whether you're building a neobank,
               scaling an accounting platform, or launching a wallet app, our
               APIs and tools integrate effortlessly, grow with you, and meet the
               highest compliance standards. Every product we offer is
               purpose-built for flexibility, scalability, and confidence —
-              because every decision matters.
+              because every decision matters.`}
             </Typography>
           </Box>
           <Box
@@ -154,15 +154,7 @@ const OurApproachCombined: React.FC = () => {
             {data?.map((item, index) => (
               <HoverScaleUpDown scale={1.1} key={index}>
                 <Stack direction="row" alignItems="center" spacing={2} mb={1}>
-                  <CheckCircleIcon
-                    sx={{
-                      background: "#C3F53C",
-                      width: "32px",
-                      height: "32px",
-                      borderRadius: "50%",
-                      p: 0.5,
-                    }}
-                  />
+                  <IconTick/>
                   <Typography
                     textAlign="left"
                     fontSize="1.125rem"
