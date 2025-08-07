@@ -7,10 +7,10 @@ export const MainLayout = (props: any) => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Box sx={{ height: 110 }} />
       <main style={{ backgroundColor: "#010101" }}>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
