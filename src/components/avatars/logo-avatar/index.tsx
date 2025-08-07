@@ -29,7 +29,7 @@ export const LogoAvatar = (props: LogoAvatarPropsI) => {
   }
 
   return (
-    <Box>
+    <Box suppressHydrationWarning>
       <Link href={link} passHref>
         <Avatar
           src={Logo}
