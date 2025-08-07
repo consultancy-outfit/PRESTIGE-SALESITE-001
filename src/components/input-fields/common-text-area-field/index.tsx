@@ -17,15 +17,15 @@ const CommonTextAreaField = (props: any) => {
     endIcon = undefined,
     placeholder,
     backgroundColor = "transparent",
-    borderRadius = 8,
+    borderRadius = 2,
     border = "1px solid",
-    color = "common.white",
+    color = "grey.400",
     borderColor = "grey.600",
     name,
     ref,
     id = name,
     rows = 5,
-    labelColor = "grey.600",
+    labelColor = "grey.400",
     required = false,
   } = props;
 

@@ -1,5 +1,5 @@
-import ServicesFeature from "@/features/products";
+import ProductNewFeature from "@/features/product-new";
 
 export default function Services() {
-  return <ServicesFeature />;
+  return <ProductNewFeature />;
 }
