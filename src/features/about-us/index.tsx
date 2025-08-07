@@ -9,16 +9,13 @@ import ContactUs from "./components/contact-us";
 export const AboutUsFeature = () => {
   return (
     <>
-      <Box
-        
-      >
-        <Hero/>
-        <OurMission/>
-        <OurApproachCombined/>
-        <OurLeadership/>
-        <WhatWeDo/>
-        <ContactUs/>
-       
+      <Box>
+        <Hero />
+        <OurMission />
+        <OurApproachCombined />
+        <OurLeadership />
+        <WhatWeDo />
+        <ContactUs />
       </Box>
     </>
   );

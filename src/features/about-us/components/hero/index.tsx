@@ -1,24 +1,21 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import IconAboutUS from "@/assets/images/common/images/icon-aboutus";
+import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
 import {
   Box,
-  Grid,
-  Stack,
-  Typography,
   Button,
   Container,
-  useTheme,
+  Grid,
+  Stack,
+  Typography
 } from "@mui/material";
+import Image from "next/image";
+import React from "react";
 import { HeroImage } from "../../assets";
-import { AboutIcon, RealMoneyChooseUsIcon } from "../../assets/icons";
-import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
-import ScaleInView from "@/components/animations/animation-scroll/scale-in-view";
+import { RealMoneyChooseUsIcon } from "../../assets/icons";
 
 const Hero: React.FC = () => {
-  const theme = useTheme();
-
   return (
     <Box
       component="section"
@@ -37,18 +34,7 @@ const Hero: React.FC = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Stack spacing={3}>
               <Stack direction="row" spacing={2} alignItems="center">
-                <Box
-                  sx={{
-                    backgroundColor: "primary.main",
-                    borderRadius: "50%",
-                    p: 0.5,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <AboutIcon />
-                </Box>
+                <IconAboutUS/>
 
                 <Typography
                   variant="body1"
@@ -121,6 +107,7 @@ const Hero: React.FC = () => {
                     fontWeight: 600,
                     boxShadow: "none",
                     fontFamily: "Inter",
+                    border:"1px solid #ffff",
                     "&:hover": {
                       backgroundColor: "#2C2C2C",
                       boxShadow: "none",
