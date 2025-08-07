@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://prestige.netlify.app/og-logo.png",
+        url: "https://prestigefin.netlify.app/og-logo.png",
         type: "image/png",
         width: 1200,
         height: 630,
