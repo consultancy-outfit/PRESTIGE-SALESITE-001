@@ -35,7 +35,7 @@ const products = [
     title: "See clearer decide smarter.",
     description:
       "Data is the new engine of growth. Prestige gives you the tools to unlock deep intelligence from raw financial data enabling smarter decisions, better customer experiences, and sharper business performance.",
-    url: "/",
+    url: "/products/data-intelligence-and-insights",
   },
   {
     img: pro3,
@@ -43,7 +43,7 @@ const products = [
     title: "Move money with confidence instantly.",
     description:
       "Prestige lets you power every kind of transfer to enterprise-level disbursements. Whether domestic or international, micro or bulk, we make payments fast, intelligent, and secure.",
-    url: "/",
+    url: "/products/payments-and-money-movement",
   },
   {
     img: pro4,
@@ -51,7 +51,7 @@ const products = [
     title: "Frictionless connection total control.",
     description:
       "Prestige ensures secure, compliant, and high-performance connectivity to financial accounts. Our SmartBank layer delivers real-time data access, control, and consent orchestration across banking ecosystems.",
-    url: "/",
+    url: "/products/account-access-and-connectivity",
   },
   {
     img: pro5,
@@ -59,15 +59,15 @@ const products = [
     title: "Verify, comply, and scale seamlessly.",
     description:
       "Regulatory compliance doesn’t have to slow you down. With Prestige, your business gets built-in KYC, identity verification, and robust PSD2/FCA alignment — so you can focus on growth, not red tape.",
-    url: "/",
+    url: "/products/identity-and-regulatory-compliance",
   },
   {
     img: pro6,
-    tag: "Product · Accountant HelpSquad",
+    tag: "Accountant HelpSquad",
     title: "Smarter tools for better finance teams.",
     description:
       "Whether you’re managing corporate finance or supporting SMB clients, our Accountant HelpSquad gives you smart automation and deep visibility — saving time, boosting accuracy, and powering better decisions.",
-    url: "/",
+    url: "/products/accountant-help-squad",
   },
   {
     img: pro7,
@@ -75,7 +75,7 @@ const products = [
     title: "Make every transaction count.",
     description:
       "Centspay transforms ordinary financial activity into meaningful value — helping users spend smarter, save seamlessly, and engage with their money in real time.",
-    url: "/",
+    url: "/products/centspay",
   },
 ];
 
