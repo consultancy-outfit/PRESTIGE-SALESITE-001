@@ -93,7 +93,7 @@ export const Header = () => {
         animate={controls}
         initial={{
           width: "90%",
-          backgroundColor: "transparent",
+          backgroundColor: "#010101",
           boxShadow: "none",
           top: 0,
         }}
@@ -225,7 +225,7 @@ export const Header = () => {
               color="secondary"
               customStyles={{
                 borderRadius: "999px",
-                border: "1px solid #F2F2F2",
+                border: "2px solid #C3F53C",
                 px: "24px",
                 py: "8px",
                 height: "50px",
@@ -233,8 +233,9 @@ export const Header = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
-                bgcolor: theme?.palette?.common?.white,
-                color: theme?.palette?.text?.primary,
+                color: "#C3F53C",
+                fontWeight: 600,
+                bgcolor: theme?.palette?.common?.black,
               }}
             >
               Login
@@ -243,16 +244,17 @@ export const Header = () => {
               link={APP_ROUTES?.Get_STARTED}
               customStyles={{
                 borderRadius: "999px",
-                border: `1.5px solid ${theme?.palette?.primary?.main}`,
+                border: `1.5px solid linear-gradient(0deg, #C3F53C 0%, #C3F53C 100%)`,
                 px: "24px",
                 py: "8px",
-                bgcolor: theme?.palette?.primary?.main,
-                color: theme?.palette?.common?.white,
+                background: "linear-gradient(0deg, #C3F53C 0%, #C3F53C 100%)",
+                color: "#000000",
                 height: "50px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 width: "fit-content",
+                fontWeight: 600,
               }}
             >
               Register

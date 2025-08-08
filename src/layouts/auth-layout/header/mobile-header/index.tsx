@@ -139,10 +139,17 @@ export const MobileHeader = () => {
               variant="outlined"
               color="secondary"
               customStyles={{
-                borderRadius: 2,
-                px: 2,
-                py: 1,
-                color: theme?.palette?.text?.primary,
+                borderRadius: "999px",
+                border: "2px solid #C3F53C",
+                px: "24px",
+                py: "8px",
+                height: "50px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "fit-content",
+                color: "#000000",
+                fontWeight: 600,
               }}
             >
               Login
@@ -150,10 +157,18 @@ export const MobileHeader = () => {
             <LinkButton
               link={APP_ROUTES?.Get_STARTED}
               customStyles={{
-                borderRadius: 2,
-                px: 2,
-                py: 1,
-                bgcolor: theme?.palette?.text?.primary,
+                borderRadius: "999px",
+                border: `1.5px solid linear-gradient(0deg, #C3F53C 0%, #C3F53C 100%)`,
+                px: "24px",
+                py: "8px",
+                background: "linear-gradient(0deg, #C3F53C 0%, #C3F53C 100%)",
+                color: "#000000",
+                height: "50px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "fit-content",
+                fontWeight: 600,
               }}
             >
               Get Started

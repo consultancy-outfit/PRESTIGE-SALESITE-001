@@ -20,6 +20,7 @@ export const GetStarted = () => {
               justifyContent: "center",
               alignItems: "center",
               minHeight: "80dvh",
+              px: 2,
             }}
           >
             <ItemGridLayout md={6}>

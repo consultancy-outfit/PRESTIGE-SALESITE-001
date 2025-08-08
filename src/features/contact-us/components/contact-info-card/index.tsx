@@ -28,7 +28,7 @@ const ContactInfoCard = () => {
           marginTop={2}
           color="common.white"
           fontWeight="fontWeightThin"
-          customStyles={{ width: { md: "70%", xs: "100%" } }}
+          customStyles={{ width: { md: "90%", xs: "100%" } }}
         >
           Whether you’re exploring Open Banking integration, looking for
           tailored solutions, or just need to speak with an expert—Prestige is
@@ -39,13 +39,15 @@ const ContactInfoCard = () => {
         <CommonCard
           backgroundColor={alpha("#FFFFFF1A", 0.1)}
           boxShadow={0}
-          customStyles={{ width: 288 }}
+          customStyles={{ width: 288, p: 2.5 }}
         >
           <QuestionIcon />
           <SubHeadingText
             variant="subtitle2"
-            marginTop={1}
             color="common.white"
+            customStyles={{
+              py: 2,
+            }}
           >
             Have a questions?
           </SubHeadingText>
@@ -65,8 +67,10 @@ const ContactInfoCard = () => {
           <BookIcon />
           <SubHeadingText
             variant="subtitle2"
-            marginTop={1}
             color="common.white"
+            customStyles={{
+              py: 2,
+            }}
           >
             Compliance & Privacy
           </SubHeadingText>

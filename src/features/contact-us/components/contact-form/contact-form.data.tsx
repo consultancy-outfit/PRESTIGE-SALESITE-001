@@ -72,6 +72,7 @@ export const contactUsFormFields = [
     componentProps: {
       name: "query",
       label: "Message",
+      required: true,
       placeholder: "Enter your message",
     },
     component: TextAreaFormFields,

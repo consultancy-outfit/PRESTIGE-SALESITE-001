@@ -6,14 +6,12 @@ import { FormGrid } from "@/components/grids/form-grid";
 import { CommonCard } from "@/components/cards/common-card";
 import { CommonLoadingButton } from "@/components/buttons/common-loading-button";
 import { CommonCircularProgress } from "@/components/progress-bars/common-circular-progress";
-import { HeadingText } from "@/components/text/heading-text";
-import { CustomText } from "@/components/text/custom-text";
 
 const ContactForm = () => {
   const { methods, handleSubmit, submitContactUs, isLoading } = useContactUs();
 
   return (
-    <CommonCard borderRadius={8}>
+    <CommonCard borderRadius={8} customStyles={{ p: { md: 4, xs: 2 } }}>
       <CustomFormProvider
         methods={methods}
         onSubmit={handleSubmit(submitContactUs)}

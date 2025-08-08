@@ -8,6 +8,8 @@ import { CustomFormProvider } from "@/providers/custom-form-provider";
 import TextFormFields from "@/components/form-fields/text-form-field";
 import { CustomText } from "@/components/text/custom-text";
 import Link from "next/link";
+import { SubHeadingText } from "@/components/text/sub-heading-text";
+import { APP_ROUTES } from "@/constants/routes";
 
 const LoginForm = () => {
   const { methods, onSubmit, handleSubmit } = useLoginForm();
@@ -20,15 +22,16 @@ const LoginForm = () => {
           flexDirection: "column",
         }}
       >
-        <HeadingText variant="h4" customStyles={{ py: 2 }}>
+        <HeadingText
+          variant="h3"
+          fontWeight="fontWeightNormal"
+          customStyles={{ py: 2 }}
+        >
           Welcome back!
         </HeadingText>
-        <BodyText
-          variant="body2"
-          color="grey.400"
-        >
+        <SubHeadingText variant="subtitle2" color="grey.400">
           Please enter your details to get started
-        </BodyText>
+        </SubHeadingText>
         <CommonButton
           startIcon={<GoogleIcon />}
           variant="outlined"
@@ -62,7 +65,7 @@ const LoginForm = () => {
           fontWeight="fontWeightSemiBold"
           customStyles={{ textAlign: "left", mt: 2 }}
         >
-          <Link href="/contact-us">Forgot password?</Link>
+          <Link href={APP_ROUTES.CONTACT_US}>Forgot password?</Link>
         </BodyText>
         <CommonButton
           variant="contained"

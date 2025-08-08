@@ -1,8 +1,8 @@
 const UserIcon = () => {
   return (
     <svg
-      width="41"
-      height="40"
+      width="40px"
+      height="40px"
       viewBox="0 0 41 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

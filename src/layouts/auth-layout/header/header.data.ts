@@ -1,6 +1,16 @@
 import { APP_ROUTES } from "@/constants/routes";
+import React from "react";
 
-export const navLinksData = [
+type IconComponentType = React.FC<any>;
+
+export interface NavLinkItem {
+  title: string;
+  path: string;
+  icon?: string | IconComponentType;
+  children?: NavLinkItem[];
+}
+
+export const navLinksData: NavLinkItem[] = [
   {
     title: "Home",
     path: APP_ROUTES.HOME,
@@ -12,32 +22,6 @@ export const navLinksData = [
   {
     title: "Products",
     path: APP_ROUTES.SERVICES,
-    children: [
-      {
-        title: "Core Services",
-        path: APP_ROUTES.PRODUCT_1,
-      },
-      {
-        title: "Data Intelligence & Enrichment",
-        path: APP_ROUTES.PRODUCT_2,
-      },
-      {
-        title: " Identity & KYC",
-        path: APP_ROUTES.PRODUCT_3,
-      },
-      {
-        title: "Compliance & Access",
-        path: APP_ROUTES.PRODUCT_4,
-      },
-      {
-        title: "Centspay",
-        path: APP_ROUTES.PRODUCT_5,
-      },
-      {
-        title: "Accountant Help Squad",
-        path: APP_ROUTES.PRODUCT_6,
-      },
-    ],
   },
   {
     title: "Use Cases",
@@ -47,6 +31,24 @@ export const navLinksData = [
     title: "Careers",
     path: APP_ROUTES.CAREERS,
   },
+  // {
+  //   title: "Developers",
+  //   path: "",
+  //   children: [
+  //     {
+  //       title: "Documentations",
+  //       path: APP_ROUTES.COMING_SOON,
+  //     },
+  //     {
+  //       title: "API References",
+  //       path: APP_ROUTES.COMING_SOON,
+  //     },
+  //     {
+  //       title: "Product Demos",
+  //       path: APP_ROUTES.COMING_SOON,
+  //     },
+  //   ],
+  // },
   {
     title: "Contact Us",
     path: APP_ROUTES.CONTACT_US,

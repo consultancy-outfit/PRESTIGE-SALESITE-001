@@ -329,6 +329,8 @@ export const Header = () => {
           <Box
             sx={{
               display: { xs: "block", lg: "none" },
+              zIndex: 1500,
+              pointerEvents: "auto",
             }}
           >
             <MobileHeader getIconComponent={getIconComponent} />
