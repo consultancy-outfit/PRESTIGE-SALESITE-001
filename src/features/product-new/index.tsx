@@ -263,7 +263,7 @@ function ProductNewFeature() {
                     minWidth: "121px",
                   }}
                   endIcon={<EastSharpIcon />}
-                  onClick={() => router.push(item.title)}
+                  onClick={() => router.push(item.url)}
                 >
                   Explore
                 </Button>
