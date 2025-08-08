@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Prestige - Fintech Platform",
-    description: ``,
+    description: `Explore Prestige’s cutting-edge modular fintech platform designed to power smarter financial operations. Access secure data insights, seamless payments, regulatory compliance, and cash flow tools—built to accelerate your business success.`,
     type: "website",
     images: [
       {
-        url: "https://prestigefin.netlify.app/favicon.png",
+        url: "https://prestigefin.netlify.app/og-logo.png",
         type: "image/png",
         width: 1200,
         height: 630,
