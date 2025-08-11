@@ -26,7 +26,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { GetStarted } from "../get-started";
+import { ReadyToGetStarted } from "@/components/ready-to-get-started";
 
 const products = [
   {
@@ -94,36 +94,33 @@ function ProductNewFeature() {
         >
           <Grid container spacing={3}>
             <Grid size={{ xs: 12, xl: 6 }}>
-              <Stack gap={2}>
-                <Stack flexDirection={"row"} gap={1}>
+              <Stack spacing={3}>
+                <Stack direction="row" spacing={1} alignItems="center">
                   <IconProducts
                     sx={{
-                      fontSize: 30,
+                      fontSize: 40,
                     }}
                   />
                   <Typography
-                    variant="body1"
-                    color="#C3F53C"
+                    variant="subtitle2"
                     sx={{
-                      borderBottom: "2px solid #C3F53C",
+                      color: "primary.main",
+                      fontWeight: "bold",
+                      borderBottom: "2px solid",
+                      borderColor: "primary.main",
                     }}
                   >
                     Products
                   </Typography>
                 </Stack>
-                <Typography
-                  variant="body1"
-                  fontWeight={500}
-                  fontSize={72}
-                  color="#FFFFFF"
-                >
+                <Typography variant="h1" fontWeight={500} color="#FFFFFF">
                   Elite Financial Infrastructure Precision Crafted for the
                   Future
                 </Typography>
                 <Typography
                   variant="body1"
                   fontWeight={400}
-                  fontSize={16}
+                  fontSize={18}
                   color="#FFFFFF"
                 >
                   {`Whether you're building a fintech product, running a platform,
@@ -194,26 +191,15 @@ function ProductNewFeature() {
 
                 <Box
                   bgcolor={"#080808"}
-                  px={2}
                   py={0.5}
+                  px={0.7}
                   borderRadius={35}
                   display={"flex"}
                   alignContent={"center"}
                   justifyContent={"center"}
-                  gap={2}
-                  height={30}
-                  width={"fit-content"}
+                  gap={1.5}
                 >
-                  <Box
-                    bgcolor={"#C3F53C"}
-                    px={1}
-                    borderRadius={35}
-                    height={22}
-                    width={"fit-content"}
-                    display={"flex"}
-                    alignContent={"center"}
-                    justifyContent={"center"}
-                  >
+                  <Box bgcolor={"#C3F53C"} px={1} borderRadius={35} height={20}>
                     <Typography
                       variant="body1"
                       color="#080808"
@@ -245,6 +231,7 @@ function ProductNewFeature() {
                   color="#454745"
                   fontSize={14}
                   fontWeight={400}
+                  width={{ md: "90%", xs: "100%" }}
                 >
                   {item.description}
                 </Typography>
@@ -279,11 +266,14 @@ function ProductNewFeature() {
           pb: { xs: 8 },
           pt: 5,
           px: { xs: 3, lg: 20 },
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        <Stack gap={2} alignItems={"flex-start"}>
+        <Stack gap={2} alignItems={"flex-start"} sx={{ ml: { lg: 20, xs: 0 } }}>
           <Typography
-            variant="body1"
+            variant="subtitle2"
             color="#080808"
             sx={{
               borderBottom: "2px solid #C3F53C",
@@ -292,10 +282,11 @@ function ProductNewFeature() {
             What Makes It Different
           </Typography>
           <Typography
-            variant="body1"
             color="#080808"
-            fontSize={58}
+            fontSize={{ md: 58, xs: 32 }}
             fontWeight={500}
+            width={{ md: "85%", xs: "100%" }}
+            lineHeight={1}
           >
             Performance, intelligence, ease of integration, compliance
           </Typography>
@@ -319,7 +310,7 @@ function ProductNewFeature() {
                       primaryTypographyProps={{
                         sx: { color: "#454745", fontSize: 18 },
                       }}
-                      primary="Multi-Currency Wallet"
+                      primary="Speed up reconciliation and settlement"
                     />
                   </ListItem>
 
@@ -331,7 +322,7 @@ function ProductNewFeature() {
                       primaryTypographyProps={{
                         sx: { color: "#454745", fontSize: 18 },
                       }}
-                      primary="Real-Time Micro-Payments"
+                      primary="Expand into new markets with multi-currency support"
                     />
                   </ListItem>
 
@@ -343,7 +334,7 @@ function ProductNewFeature() {
                       primaryTypographyProps={{
                         sx: { color: "#454745", fontSize: 18 },
                       }}
-                      primary="Currency Exchange & Conversion"
+                      primary="Reduce compliance risks with built-in KYC/AML logic"
                     />
                   </ListItem>
 
@@ -355,7 +346,7 @@ function ProductNewFeature() {
                       primaryTypographyProps={{
                         sx: { color: "#454745", fontSize: 18 },
                       }}
-                      primary="Savings with Cents"
+                      primary="Plug-and-play API integrations"
                     />
                   </ListItem>
                   <ListItem>
@@ -366,17 +357,17 @@ function ProductNewFeature() {
                       primaryTypographyProps={{
                         sx: { color: "#454745", fontSize: 18 },
                       }}
-                      primary="Peer-to-Peer Transfers"
+                      primary="Increase user trust, adoption, and satisfaction"
                     />
                   </ListItem>
                 </List>
               </Grid>
-              <Grid size={{ xs: 12, xl: 6 }}>
+              <Grid size={{ xs: 12, xl: 4 }}>
                 <SlideSidewayInView>
                   <Box
                     sx={{
-                      width: "100%",
-                      height: { xs: 336 },
+                      width: { lg: 512, xs: "100%" },
+                      height: 336,
                       backgroundImage: `url(${pro8.src})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
@@ -394,7 +385,7 @@ function ProductNewFeature() {
         </Stack>
       </Box>
 
-      <GetStarted />
+      <ReadyToGetStarted />
     </>
   );
 }

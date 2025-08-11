@@ -147,6 +147,7 @@ export const Header = () => {
                   sx={{
                     textTransform: "none",
                     color: textColor,
+                    fontSize: '15px',
                     fontWeight: theme?.typography?.fontWeightMedium,
                     "&:hover": {
                       backgroundColor: "transparent",

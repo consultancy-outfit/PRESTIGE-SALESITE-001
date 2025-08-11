@@ -38,7 +38,7 @@ const ContactUs = () => {
           component="h1"
           sx={{
             color: "#FFFFFF", // White text
-            fontWeight: "bold",
+            fontWeight: 500,
             marginBottom: "2.5rem",
             fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" },
             lineHeight: { xs: "1.3", sm: "1.4" }, // Responsive line height

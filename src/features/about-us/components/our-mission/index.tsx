@@ -21,6 +21,7 @@ const OurMission: React.FC = () => {
             maxWidth: "100%",
             mx: "auto",
           }}
+          alignItems={'center'}
         >
           <Typography
             textAlign="center"
@@ -79,16 +80,16 @@ const OurMission: React.FC = () => {
               overflow: "hidden",
               boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
               position: "relative",
-              width: "100%",
+              width: { md: "90%", xs: "100%" },
               height: "auto",
               aspectRatio: "16 / 4",
-              marginBottom:" 24px",
+              marginBottom: " 24px",
             }}
           >
             <Image
               src={OurMissionImage}
               alt="Precision-built tools for finance"
-              style={{ width: "100%", height: "450px", objectFit: "cover" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </Box>
         </Stack>

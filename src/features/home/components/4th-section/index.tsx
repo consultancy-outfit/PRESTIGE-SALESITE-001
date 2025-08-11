@@ -25,7 +25,7 @@ const SecurityAndRegulatoryReadinessHome = () => {
           direction={{ md: "row", xs: "column" }}
           justifyContent="space-between"
         >
-          <Stack spacing={2}>
+          <Stack spacing={1} width={{ md: "41%", xs: "100%" }}>
             <Typography
               textAlign="left"
               fontSize={{ md: "3.625rem", xs: "2.5rem" }}
@@ -41,10 +41,10 @@ const SecurityAndRegulatoryReadinessHome = () => {
             <Typography
               textAlign="left"
               fontSize="1.125rem"
-              fontWeight={500}
+              fontWeight={400}
               fontFamily="Inter"
               color="#454745"
-              sx={{ width: { lg: "80%", xs: "100%" } }}
+              pb={1}
             >
               Prestige is built from the ground up to meet enterprise-grade
               compliance and security needs.{" "}
@@ -74,7 +74,7 @@ const SecurityAndRegulatoryReadinessHome = () => {
               </HoverScaleUpDown>
             ))}
           </Stack>
-          <Stack width={"100%"}>
+          <Stack spacing={1}>
             <HoverScaleUpDown>
               <Image
                 src={SecurityAndRegulatoryReadinessImage}

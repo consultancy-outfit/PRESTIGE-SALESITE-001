@@ -4,8 +4,11 @@ import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 import EastSharpIcon from "@mui/icons-material/EastSharp";
 import { Button, Card, Grid, Stack, Typography } from "@mui/material";
 import { card1, card2, card3, card4 } from "../../assets";
+import { useRouter } from "next/navigation";
+import { APP_ROUTES } from "@/constants/routes";
 
 const ExploreOurProductsHome = () => {
+  const router = useRouter();
   const data = [
     {
       id: 1,
@@ -60,6 +63,7 @@ const ExploreOurProductsHome = () => {
           fontFamily="Inter"
           m="auto"
           color="#454745"
+          width={{ md: "50%", xs: "100%" }}
         >
           Prestige offers a connected suite of modular services — each designed
           to solve a critical financial challenge. Combine them to unlock
@@ -123,13 +127,14 @@ const ExploreOurProductsHome = () => {
               color: "#010101",
               background: "#C3F53C",
               borderRadius: "2.5rem",
-              px: 3,
-              py: 1,
-              fontSize: "1.125rem",
+              fontSize: "18px",
               fontFamily: "Inter",
-              fontWeight: 500,
-              width: "fit-content",
+              fontWeight: 600,
+              px: "24px",
+              py: "8px",
+              height: "50px",
             }}
+            onClick={() => router.push(APP_ROUTES.SERVICES)}
             endIcon={<EastSharpIcon />}
           >
             Explore Our Products

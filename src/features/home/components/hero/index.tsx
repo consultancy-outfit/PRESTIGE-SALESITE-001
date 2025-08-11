@@ -1,32 +1,29 @@
+"use client";
+
 import { Button, Stack, Typography } from "@mui/material";
 import EastSharpIcon from "@mui/icons-material/EastSharp";
 import Image from "next/image";
 import { HomeHeroSectionImage } from "../../assets";
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
 import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
+import { useRouter } from "next/navigation";
+import { APP_ROUTES } from "@/constants/routes";
+
 const Hero = () => {
+  const router = useRouter();
   return (
     <SlideUpInView>
       <Stack alignItems="center" spacing={2}>
         <Typography
           textAlign="center"
-          fontSize={{ md: "3.5rem", xs: "1.8rem" }}
+          variant="h3"
           fontWeight={"bold"}
           fontFamily="Inter"
           m="auto"
           color="#fff"
+          sx={{ width: { md: "50%", xs: "100%" } }}
         >
-          Intelligent Financial Products for
-        </Typography>
-        <Typography
-          textAlign="center"
-          fontSize={{ md: "3.5rem", xs: "1.8rem" }}
-          fontWeight={"bold"}
-          fontFamily="Inter"
-          m="auto"
-          color="#fff"
-        >
-          Confident Decisions{" "}
+          Intelligent Financial Products for Confident Decisions
         </Typography>
         <Typography
           textAlign="center"
@@ -45,6 +42,7 @@ const Hero = () => {
           direction={{ md: "row", xs: "column" }}
           spacing={2}
           textAlign={"center"}
+          pb={2}
         >
           <HoverScaleUpDown scale={1.02}>
             <Button
@@ -53,12 +51,14 @@ const Hero = () => {
                 color: "#010101",
                 background: "#C3F53C",
                 borderRadius: "2.5rem",
-                px: 3,
-                py: 1,
+                px: "24px",
+                py: "8px",
+                height: "50px",
                 fontSize: "1.125rem",
                 fontFamily: "Inter",
-                fontWeight: 500,
+                fontWeight: 600,
               }}
+              onClick={() => router.push(APP_ROUTES.SERVICES)}
               endIcon={<EastSharpIcon />}
             >
               Explore Our Products
@@ -71,11 +71,13 @@ const Hero = () => {
                 color: "#C3F53C",
                 borderColor: "#C3F53C",
                 borderRadius: "2.5rem",
-                px: 3,
-                py: 1,
+                px: "24px",
+                py: "8px",
+                height: "50px",
                 fontSize: "1.125rem",
                 fontFamily: "Inter",
               }}
+              onClick={() => router.push(APP_ROUTES.CONTACT_US)}
               endIcon={<EastSharpIcon />}
             >
               Contact Us

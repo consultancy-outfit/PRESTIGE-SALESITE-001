@@ -25,7 +25,7 @@ export const ReadyToGetStarted = () => {
         <Typography
           variant="h2"
           color="white"
-          fontWeight={600}
+          fontWeight={500}
           textAlign={"center"}
         >
           “Prestige helps us move faster while staying <br /> fully compliant.

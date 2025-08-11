@@ -16,8 +16,8 @@ const CustomerStoriesHome = () => {
     <SlideUpInView>
       <Stack
         spacing={8}
-        px={{ lg: 20, xs: 5 }}
-        py={6}
+        px={{ lg: 20, md: 10, sm: 5, xs: 3 }}
+        py={{ md: 6, xs: 4 }}
         sx={{ backgroundColor: "#F2F5F7" }}
       >
         <Stack sx={{ color: "#03020C" }} spacing={2}>
@@ -30,28 +30,31 @@ const CustomerStoriesHome = () => {
           >
             Customer stories
           </Typography>
-          <Grid container rowGap={5}>
+
+          <Grid container spacing={4}>
+            {/* Large Feature Card */}
             <Grid size={{ lg: 8, xs: 12 }}>
               <Card
                 sx={{
                   background: "#080808",
-                  px: 2,
-                  py: 4,
+                  px: { md: 4, xs: 2 },
+                  py: { md: 4, xs: 3 },
                   borderRadius: "2rem",
-                  width: { md: "60rem", xs: "24rem" },
-                  height: { md: "30rem", xs: "auto" },
+                  height: "100%",
                 }}
               >
                 <Stack
                   direction={{ md: "row", xs: "column" }}
                   alignItems="center"
+                  spacing={{ md: 4, xs: 3 }}
                 >
                   <Typography
                     textAlign="left"
-                    fontSize={{ md: "2.5rem", xs: "2rem" }}
+                    fontSize={{ md: "2.5rem", xs: "1.8rem" }}
                     fontWeight={500}
                     fontFamily="Inter"
                     color="#fff"
+                    flex={1}
                   >
                     Prestige powers world-class companies with intelligent, high
                     performance financial infrastructure.
@@ -59,98 +62,70 @@ const CustomerStoriesHome = () => {
                   <Image
                     src={PixelCloudImage}
                     alt="4 pixel cloud"
-                    style={{ width: "100%" }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      maxWidth: "350px",
+                    }}
                   />
                 </Stack>
               </Card>
             </Grid>
-            <Grid size={{ lg: 4, xs: 12 }}>
-              <Card
-                sx={{
-                  borderRadius: "2rem",
-                  width: "24rem",
-                  height: "30rem",
-                }}
-              >
-                <Image src={NexoraLTDImage} alt="Image" />
-                <Typography
-                  sx={{ p: 3 }}
-                  textAlign="left"
-                  fontSize="1.5rem"
-                  fontWeight={500}
-                  fontFamily="Inter"
+
+            {/* Story Cards */}
+            {[
+              {
+                img: NexoraLTDImage,
+                title: "Nexora",
+                desc: "partnered with Prestige to streamline cross border billing and simplify payments at scale.",
+              },
+              {
+                img: RideFlowImage,
+                title: "RideFlow",
+                desc: "upgraded its payout system with Prestige, ensuring fast, secure, and seamless payments for its driver network.",
+              },
+              {
+                img: SyncoraImage,
+                title: "Syncora",
+                desc: "boosted its transaction approval rates by 8% by leveraging Prestige’s intelligent payment authorisation engine.",
+              },
+              {
+                img: TrademixImage,
+                title: "Trademix",
+                desc: "uses Prestige to strengthen fraud defenses while accelerating transaction authorisations for global customers.",
+              },
+            ].map((story, index) => (
+              <Grid size={{ lg: 4, sm: 6, xs: 12 }} key={index}>
+                <Card
+                  sx={{
+                    borderRadius: "2rem",
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
                 >
-                  <b>Nexora</b> partnered with Prestige to streamline cross
-                  border billing and simplify payments at scale.
-                </Typography>
-              </Card>
-            </Grid>
-            <Grid size={{ lg: 4, xs: 12 }}>
-              <Card
-                sx={{
-                  borderRadius: "2rem",
-                  width: "24rem",
-                  height: "30rem",
-                }}
-              >
-                <Image src={RideFlowImage} alt="Image" />
-                <Typography
-                  sx={{ p: 3 }}
-                  textAlign="left"
-                  fontSize="1.5rem"
-                  fontWeight={500}
-                  fontFamily="Inter"
-                >
-                  <b>RideFlow</b> upgraded its payout system with Prestige,
-                  ensuring fast, secure, and seamless payments for its driver
-                  network.
-                </Typography>
-              </Card>
-            </Grid>
-            <Grid size={{ lg: 4, xs: 12 }}>
-              <Card
-                sx={{
-                  borderRadius: "2rem",
-                  width: "24rem",
-                  height: "30rem",
-                }}
-              >
-                <Image src={SyncoraImage} alt="Image" />
-                <Typography
-                  sx={{ p: 3 }}
-                  textAlign="left"
-                  fontSize="1.5rem"
-                  fontWeight={500}
-                  fontFamily="Inter"
-                >
-                  <b>Syncora</b> boosted its transaction approval rates by 8% by
-                  leveraging Prestige’s intelligent payment authorisation
-                  engine.
-                </Typography>
-              </Card>
-            </Grid>
-            <Grid size={{ lg: 4, xs: 12 }}>
-              <Card
-                sx={{
-                  borderRadius: "2rem",
-                  width: "24rem",
-                  height: "30rem",
-                }}
-              >
-                <Image src={TrademixImage} alt="Image" />
-                <Typography
-                  sx={{ p: 3 }}
-                  textAlign="left"
-                  fontSize="1.5rem"
-                  fontWeight={500}
-                  fontFamily="Inter"
-                >
-                  <b>Trademix</b> uses Prestige to strengthen fraud defenses
-                  while accelerating transaction authorisations for global
-                  customers.
-                </Typography>
-              </Card>
-            </Grid>
+                  <Image
+                    src={story.img}
+                    alt={`${story.title} image`}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      borderTopLeftRadius: "2rem",
+                      borderTopRightRadius: "2rem",
+                    }}
+                  />
+                  <Typography
+                    sx={{ p: 3 }}
+                    textAlign="left"
+                    fontSize={{ md: "1.5rem", xs: "1.2rem" }}
+                    fontWeight={500}
+                    fontFamily="Inter"
+                  >
+                    <b>{story.title}</b> {story.desc}
+                  </Typography>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
         </Stack>
       </Stack>

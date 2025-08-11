@@ -62,26 +62,31 @@ const WhatWeDo: React.FC = () => {
       <Container
         maxWidth="xl"
         sx={{
-          pt: 5,
+          py: 5,
         }}
       >
-        <Typography
-          variant="h4"
-          component="h2"
-          color="#FFFFFF"
-          sx={{
-            fontWeight: 800,
-          }}
+        <Grid
+          container
+          spacing={2}
+          py={2}
+          alignItems={"center"}
+          justifyContent={"space-between"}
         >
-          <Box component="span" sx={{ color: "#C3F53C" }}>
-            Bank-level
-          </Box>{" "}
-          Security
-        </Typography>
-
-        <Grid container>
           {/* Features List */}
-          <Grid size={{ xs: 12, lg: 6 }} alignItems={"center"}>
+          <Grid size={{ xs: 12, lg: 5 }}>
+            <Typography
+              variant="h4"
+              component="h2"
+              color="#FFFFFF"
+              sx={{
+                fontWeight: 800,
+              }}
+            >
+              <Box component="span" sx={{ color: "#C3F53C" }}>
+                Bank-level
+              </Box>{" "}
+              Security
+            </Typography>
             <Stack mt={5} gap={3}>
               {securityFeatures.map((feature, index) => (
                 <Stack
@@ -115,12 +120,12 @@ const WhatWeDo: React.FC = () => {
           </Grid>
 
           {/* Large Shield Icon */}
-          <Grid size={{ xs: 12, lg: 6 }}>
+          <Grid size={{ xs: 12, lg: 5 }}>
             <Stack alignItems={"center"} width={"100%"}>
               <Box
                 sx={{
                   width: "100%",
-                  height: 600,
+                  height: 500,
                   backgroundImage: `url(${pro10.src})`,
                   backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
@@ -139,14 +144,19 @@ const WhatWeDo: React.FC = () => {
       {/* What We Deliver Section */}
       <Box
         sx={{
-          bgcolor: "#FFFFFF",
+          bgcolor: "#F2F5F7",
           height: "100%",
           pb: { xs: 8 },
           pt: 5,
           px: { xs: 3, lg: 7 },
         }}
       >
-        <Stack alignItems={"center"} gap={2} sx={{ mx: "auto" }}>
+        <Stack
+          alignItems={"center"}
+          gap={2}
+          sx={{ mx: "auto" }}
+          width={{ md: "70%", xs: "100%" }}
+        >
           <Typography
             variant="body1"
             color="#080808"
@@ -155,18 +165,16 @@ const WhatWeDo: React.FC = () => {
               borderBottom: "2px solid #C3F53C",
             }}
           >
-            Join the Prestige Network
+            What We Deliver
           </Typography>
 
           <Typography
-            variant="h4"
-            component="h2"
+            variant="h3"
             sx={{
               color: "#080808",
-              fontWeight: 800,
+              fontWeight: 500,
               mb: { xs: 6, sm: 8, md: 12 },
-              fontSize: { xs: "1.875rem", sm: "2.25rem", md: "3rem" },
-              lineHeight: { xs: "2.25rem", sm: "2.5rem", md: 1 },
+              textAlign: "center",
             }}
           >
             Intelligent Financial Products for Confident Decisions
@@ -175,14 +183,14 @@ const WhatWeDo: React.FC = () => {
           {/* Feature Cards Grid — xs 12 / md 6 (2 columns from md and up).
               You asked "start 6 by 6 at xs 12" — here xs=12, sm=6 so it becomes 2-col from sm.
               If you prefer 2-col only from md, change sm={6} to md={6}. */}
-          <Grid container spacing={4} justifyContent="center">
+          <Grid container spacing={2} justifyContent="center">
             {deliverFeatures.map((feature, index) => (
-              <Grid size={{ xs: 12, lg: 6 }} key={index}>
+              <Grid size={{ xs: 12, md: 5 }} key={index}>
                 <Paper
                   elevation={0}
                   sx={{
                     p: 3,
-                    borderRadius: "8px",
+                    borderRadius: "32px",
                     display: "flex",
                     alignItems: "flex-start",
                     gap: 2,

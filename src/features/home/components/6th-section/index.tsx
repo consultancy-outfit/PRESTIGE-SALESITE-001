@@ -4,9 +4,7 @@ import { HoverScaleUpDown } from "@/components/animations/hover-scale-up-down";
 import DoneRoundedIcon from "@mui/icons-material/DoneRounded";
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import {
-    OurTechStackImage
-} from "../../assets";
+import { OurTechStackImage } from "../../assets";
 const OurTechStackHome = () => {
   const data = [
     "ISO 27001-grade security",
@@ -25,18 +23,18 @@ const OurTechStackHome = () => {
         <Stack
           sx={{ color: "#03020C" }}
           direction={{ md: "row", xs: "column" }}
-          justifyContent="space-evenly"
+          justifyContent="space-between"
         >
-          <Stack spacing={3}>
+          <Stack spacing={1} width={{ md: "70%", xs: "100%" }} justifyContent={'center'}>
             <Typography
-              textAlign="left"
+              textAlign="center"
               fontSize={{ md: "3.625rem", xs: "2.5rem" }}
               fontWeight={500}
               fontFamily="Inter"
               color="#000"
               sx={{
                 borderTop: "3px solid #00C805",
-                width: { lg: "70%", xs: "100%" },
+                width: { lg: "65%", xs: "100%" },
               }}
             >
               Our Technology Stack
@@ -47,7 +45,8 @@ const OurTechStackHome = () => {
               fontWeight={500}
               fontFamily="Inter"
               color="#454745"
-              sx={{ width: { lg: "70%", xs: "100%" } }}
+              sx={{ width: { lg: "65%", xs: "100%" } }}
+              pb={1}
             >
               Prestige is built on robust, cloud-native architecture with speed,
               flexibility, and reliability at the core. We integrate seamlessly
@@ -79,12 +78,12 @@ const OurTechStackHome = () => {
               </HoverScaleUpDown>
             ))}
           </Stack>
-          <Stack width={"100%"}>
+          <Stack spacing={1}>
             <HoverScaleUpDown>
               <Image
                 src={OurTechStackImage}
                 alt="Feature Image"
-                style={{ width: "100%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </HoverScaleUpDown>
           </Stack>

@@ -52,7 +52,7 @@ const OurLeadership: React.FC = () => {
           variant="body1"
           sx={{
             color: "#444444",
-            fontSize: { xs: "0.9rem", md: "1rem" },
+            fontSize: { xs: "0.9rem", md: "18px" },
             lineHeight: 1.6,
             maxWidth: "800px",
             mx: "auto",
@@ -65,8 +65,8 @@ const OurLeadership: React.FC = () => {
           core.
         </Typography>
 
-        <Grid container spacing={4}>
-          <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+        <Grid container spacing={2} justifyContent={'center'}>
+          <Grid size={{ xs: 12, md: 6, lg: 3 }}>
             <Box
               sx={{
                 backgroundColor: "#080808",
@@ -115,7 +115,7 @@ const OurLeadership: React.FC = () => {
             </Box>
           </Grid>
 
-          <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+          <Grid size={{ xs: 12, md: 6, lg: 3 }}>
             <Box
               sx={{
                 backgroundColor: "#080808",
@@ -164,7 +164,7 @@ const OurLeadership: React.FC = () => {
             </Box>
           </Grid>
 
-          <Grid size={{ xs: 12, md: 6, lg: 4 }}>
+          <Grid size={{ xs: 12, md: 6, lg: 3 }}>
             <Box
               sx={{
                 backgroundColor: "#080808",
@@ -215,13 +215,14 @@ const OurLeadership: React.FC = () => {
         </Grid>
         <Stack
           direction={{ xs: "column", md: "row" }}
-          spacing={4}
+          spacing={2}
           alignItems="center"
           sx={{
             backgroundColor: "#080808",
             color: "white",
             p: { xs: 4, md: 6 },
             borderRadius: "16px",
+            width: {md: '75%', xs: '100%'}
           }}
         >
           <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
@@ -257,7 +258,7 @@ const OurLeadership: React.FC = () => {
                 variant="body1"
                 color="#ffff"
                 sx={{
-                  fontSize: { xs: "0.9rem", md: "1rem" },
+                  fontSize: { xs: "0.9rem", md: "18px" },
                   lineHeight: 1.6,
                   mb: 3,
                 }}

@@ -1,11 +1,11 @@
 import SlideUpInView from "@/components/animations/animation-scroll/slide-up-in-view";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import {
   AccountingPlatformsIcon,
   DigitalBanksIcon,
   EnterpriseSaasIcon,
-  FintechInnovatorsIcon
+  FintechInnovatorsIcon,
 } from "../../assets";
 
 const HomeThirdSection = () => {
@@ -94,23 +94,25 @@ const HomeThirdSection = () => {
                 <Stack>
                   <Image src={items?.image} alt={items?.heading} />
                 </Stack>
-                <Typography
-                  textAlign="left"
-                  fontSize={"1.5rem"}
-                  fontWeight={500}
-                  fontFamily="Inter"
-                  color="#080808"
-                >
-                  {items?.heading}
-                </Typography>
-                <Typography
-                  textAlign="left"
-                  fontSize={"1.125rem"}
-                  fontFamily="Inter"
-                  color="#454745"
-                >
-                  {items?.description}
-                </Typography>
+                <Box height={130}>
+                  <Typography
+                    textAlign="left"
+                    fontSize={"1.5rem"}
+                    fontWeight={500}
+                    fontFamily="Inter"
+                    color="#080808"
+                  >
+                    {items?.heading}
+                  </Typography>
+                  <Typography
+                    textAlign="left"
+                    fontSize={"1.125rem"}
+                    fontFamily="Inter"
+                    color="#454745"
+                  >
+                    {items?.description}
+                  </Typography>
+                </Box>
               </Stack>
             ))}
           </Stack>
