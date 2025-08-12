@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
   const dataProtection = [
     "Trusted third-party service providers (e.g., hosting, analytics, CRM).",
     "Regulators or legal authorities if required by law.",
-    "Affiliates or subsidiaries under Real Money for internal operations.",
+    "Affiliates or subsidiaries under Prestige for internal operations.",
   ];
   const yourRights = [
     "Access or correct your personal data.",
@@ -141,8 +141,9 @@ export default function PrivacyPolicy() {
             </Typography>
             <Typography
               color="#575757"
-              fontFamily="Red Hat Display"
-              fontSize="1.125rem"
+              fontFamily="Inter"
+              fontSize={"1.375rem"}
+              textAlign="left"
               mt={2}
             >
               {`At Prestige, your privacy is important to us. This Privacy Policy outlines how we collect, use, store, and protect your personal information when you visit our website or use our services.`}
@@ -331,30 +332,6 @@ export default function PrivacyPolicy() {
             <Typography
               color="#000"
               fontFamily="Inter"
-              fontSize={"1.5rem"}
-              fontWeight={500}
-              textAlign="left"
-            >
-              Limitation of Liability
-            </Typography>
-            <Typography
-              color="#575757"
-              fontFamily="Inter"
-              fontSize={"1.375rem"}
-              textAlign="left"
-            >
-              To the maximum extent permitted by law, Real Money shall not be
-              liable for any indirect, incidental, special, or consequential
-              damages, or loss of data, arising from your use of our services.
-            </Typography>
-          </Stack>
-        </TabPanel>
-
-        <TabPanel value={value} index={7}>
-          <Stack spacing={1}>
-            <Typography
-              color="#000"
-              fontFamily="Inter"
               fontSize={"2rem"}
               textAlign="left"
             >
@@ -372,7 +349,7 @@ export default function PrivacyPolicy() {
           </Stack>
         </TabPanel>
 
-        <TabPanel value={value} index={8}>
+        <TabPanel value={value} index={7}>
           <Stack spacing={1}>
             <Typography
               color="#000"

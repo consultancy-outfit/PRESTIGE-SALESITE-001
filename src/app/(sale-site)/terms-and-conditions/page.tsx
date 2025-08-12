@@ -135,8 +135,9 @@ export default function TermsAndConditionsPolicy() {
             </Typography>
             <Typography
               color="#575757"
-              fontFamily="Red Hat Display"
-              fontSize="1.125rem"
+              fontFamily="Inter"
+              fontSize={"1.375rem"}
+              textAlign="left"
               mt={2}
             >
               {` Welcome to Prestige. These Terms and Conditions ("Terms") govern
@@ -251,7 +252,7 @@ export default function TermsAndConditionsPolicy() {
               textAlign="left"
             >
               All content on our site and services—including text, graphics,
-              logos, software, and trademarks—is the property of Real Money or
+              logos, software, and trademarks—is the property of Prestige or
               its licensors and is protected by intellectual property laws. You
               may not copy, distribute, or use it without prior written
               permission.
@@ -333,7 +334,7 @@ export default function TermsAndConditionsPolicy() {
               fontSize={"1.375rem"}
               textAlign="left"
             >
-              To the maximum extent permitted by law, Real Money shall not be
+              To the maximum extent permitted by law, Prestige shall not be
               liable for any indirect, incidental, special, or consequential
               damages, or loss of data, arising from your use of our services.
             </Typography>

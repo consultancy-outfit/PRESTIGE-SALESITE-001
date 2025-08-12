@@ -4,8 +4,8 @@ import { SvgIconProps } from "@mui/material";
 const UseCasesIcon: React.FC<SvgIconProps> = () => {
   return (
     <svg
-      width="40"
-      height="40"
+      width="40px"
+      height="40px"
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const UseCasesIcon: React.FC<SvgIconProps> = () => {
       </g>
       <defs>
         <clipPath id="clip0_1074_3719">
-          <rect width="40" height="40" fill="white" />
+          <rect width="40px" height="40px" fill="white" />
         </clipPath>
       </defs>
     </svg>

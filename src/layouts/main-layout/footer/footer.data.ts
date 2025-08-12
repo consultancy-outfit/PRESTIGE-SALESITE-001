@@ -1,9 +1,29 @@
 export const products = [
-  { id: 1, link: "/products/data-intelligence-and-insights", label: "Data Intelligence & Insights" },
-  { id: 2, link: "/products/payments-and-money-movement", label: "Payments & Money Movement" },
-  { id: 3, link: "/products/account-access-and-connectivity", label: "Account Access & Connectivity" },
-  { id: 4, link: "/products/identity-and-regulatory-compliance", label: "Identity & Regulatory Compliance" },
-  { id: 4, link: "/products/accountant-help-squad", label: "Accountant HelpSquad" },
+  {
+    id: 1,
+    link: "/products/data-intelligence-and-insights",
+    label: "Data Intelligence & Insights",
+  },
+  {
+    id: 2,
+    link: "/products/payments-and-money-movement",
+    label: "Payments & Money Movement",
+  },
+  {
+    id: 3,
+    link: "/products/account-access-and-connectivity",
+    label: "Account Access & Connectivity",
+  },
+  {
+    id: 4,
+    link: "/products/identity-and-regulatory-compliance",
+    label: "Identity & Regulatory Compliance",
+  },
+  {
+    id: 4,
+    link: "/products/accountant-help-squad",
+    label: "Accountant HelpSquad",
+  },
   { id: 4, link: "/products/centspay", label: "Centspay" },
 ];
 
@@ -20,4 +40,8 @@ export const resources = [
   // { id: 2, link: "/", label: "Developers" },
   { id: 3, link: "/terms-and-conditions", label: "Terms & Conditions" },
   { id: 3, link: "/privacy-policy", label: "Privacy Policy" },
+];
+export const supportSection = [
+  { id: 1, icon: "", label: "Use Cases" },
+  { id: 3, icon: "",  label: "Terms & Conditions" },
 ];

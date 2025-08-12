@@ -40,8 +40,8 @@ export const ProductDetailPagesCommon = (props: any) => {
             {PageTitle}
           </Typography>
           <Typography
-            variant="body1"
-            color="grey"
+            variant="subtitle2"
+            color="white"
             sx={{ mb: 3, textAlign: "center" }}
           >
             {PageDescription}
@@ -60,18 +60,25 @@ export const ProductDetailPagesCommon = (props: any) => {
             width: "100%",
             height: "660px",
             position: "relative",
-            bottom: "200px",
+            bottom: "100px",
           }}
         />
       </Box>
 
-      <Grid container sx={{ backgroundColor: "#F2F5F7", px: 15, py: 5 }}>
+      <Grid
+        container
+        sx={{
+          backgroundColor: "#F2F5F7",
+          px: { md: 15, xs: 2 },
+          py: { md: 5, xs: 1 },
+        }}
+      >
         {gridContent.map((item: any, idx: number) => (
           <React.Fragment key={item?.id}>
             {idx % 2 === 0 ? (
               <>
                 {/* Text first, then image */}
-                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: { md: 8, xs: 2 } }}>
                   <Box sx={{ mb: 3 }}>
                     <Typography variant="h6" fontWeight={600}>
                       {item.title}
@@ -106,7 +113,7 @@ export const ProductDetailPagesCommon = (props: any) => {
                       </Box>
                     ))}
                 </Grid>
-                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: 8 }}>
+                <Grid size={{ xs: 12, sm: 6 }} sx={{ mb: { md: 8, xs: 2 } }}>
                   <Image
                     src={item.sectionImage}
                     alt="HeroSection"

@@ -16,15 +16,31 @@ export default function Careers() {
           m={2}
         >
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <CareersIcon />
-            <CareersTextIcon />
+            <Stack direction="row" spacing={1} alignItems="center">
+              <CareersIcon
+                sx={{
+                  fontSize: 40,
+                }}
+              />
+              <Typography
+                variant="subtitle2"
+                sx={{
+                  color: "primary.main",
+                  fontWeight: "bold",
+                  borderBottom: "2px solid",
+                  borderColor: "primary.main",
+                }}
+              >
+                Careers
+              </Typography>
+            </Stack>
           </Box>
-          <Typography variant="h2" color="white" fontWeight={600}>
+          <Typography variant="h2" color="white" fontWeight={600} textAlign={'center'}>
             Join the Team Build the Future.
           </Typography>
           <Typography
-            variant="body1"
-            color="grey"
+            variant="subtitle2"
+            color="white"
             sx={{ mb: 3, textAlign: "center" }}
           >
             We’re on a mission to redefine finance through smarter connectivity,

@@ -5,7 +5,7 @@ const PrecisionDataProductTextIcon: React.FC<SvgIconProps> = () => {
   return (
     <svg
       width="228"
-      height="26"
+      height="28"
       viewBox="0 0 228 26"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
