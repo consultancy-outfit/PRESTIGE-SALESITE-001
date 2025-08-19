@@ -84,11 +84,16 @@ const Hero = () => {
             </Button>
           </HoverScaleUpDown>
         </Stack>
-        <Stack sx={{ width: { xs: "100%" } }}>
+        <Stack sx={{ width: { xs: "100%" }, mt: { xs: 3, md: 0 } }}>
           <Image
             src={HomeHeroSectionImage}
             alt="Home Hero Section Image"
-            style={{ width: "70%", height: "auto", margin: "auto" }}
+            style={{
+              width: "100%", // Always take full container width
+              maxWidth: "1280px", // Limit on large screens
+              height: "auto", // Maintain aspect ratio
+              margin: "auto",
+            }}
           />
         </Stack>
       </Stack>

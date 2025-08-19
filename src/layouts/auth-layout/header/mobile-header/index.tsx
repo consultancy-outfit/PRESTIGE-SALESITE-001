@@ -133,6 +133,7 @@ export const MobileHeader = () => {
               padding: 1,
               gap: 1,
             }}
+            onClick={handleClose}
           >
             <LinkButton
               link={APP_ROUTES?.PARTNER_WITH_US}
