@@ -160,14 +160,14 @@ const Footer = () => {
           >
             Email: info@prestige.co.uk
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             sx={{ mt: 1.5, cursor: "pointer" }}
             color="#000000"
             fontFamily="Manrope"
           >
             Address: 30 Churchill Place, London, England, E14 5RE
-          </Typography>
+          </Typography> */}
         </Grid> 
       </Grid>
 

@@ -8,6 +8,7 @@ import {
   PaymentsMoneyMovementImage,
   PSD2AndFCAComplianceImage,
   SecureIdentityAndKYCImage,
+  TrustStartOneImage,
 } from "@/assets/images/features/products";
 import ProductDetailPagesCommon from "../product-detail-pages-common";
 
@@ -120,7 +121,7 @@ export const IdentityAndRegulatoryCompliance = () => {
           protection.
         </>
       }
-      PageHeaderImage={PaymentsMoneyMovementImage}
+      PageHeaderImage={TrustStartOneImage}
       gridContent={gridContent}
     />
   );

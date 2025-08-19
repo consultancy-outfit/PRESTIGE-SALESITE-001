@@ -8,14 +8,21 @@ export default function Careers() {
         <Box
           display={"flex"}
           flexDirection={"column"}
-          alignItems={"center"}
+          alignItems={{ md: "center", xs: "flex-start" }}
           justifyContent={"center"}
           gap={2}
           py={10}
           px={2}
           m={2}
         >
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              justifyContent: { xs: "flex-start", md: "center" },
+            }}
+          >
             <Stack direction="row" spacing={1} alignItems="center">
               <CareersIcon
                 sx={{
@@ -35,13 +42,21 @@ export default function Careers() {
               </Typography>
             </Stack>
           </Box>
-          <Typography variant="h2" color="white" fontWeight={600} textAlign={'center'}>
+          <Typography
+            variant="h2"
+            color="white"
+            fontWeight={600}
+            textAlign={{ xs: "left", md: "center" }}
+          >
             Join the Team Build the Future.
           </Typography>
           <Typography
             variant="subtitle2"
             color="white"
-            sx={{ mb: 3, textAlign: "center" }}
+            sx={{
+              mb: 3,
+              textAlign: { xs: "left", md: "center" },
+            }}
           >
             We’re on a mission to redefine finance through smarter connectivity,
             intelligent data, and seamless digital experiences. Our platform{" "}

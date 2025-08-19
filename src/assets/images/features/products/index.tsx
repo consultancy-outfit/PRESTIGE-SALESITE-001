@@ -19,6 +19,7 @@ export { default as RealTimeMicroPaymentsImage } from "./RealTimeMicroPaymentsIm
 export { default as CurrencyExchangeConversionImage } from "./CurrencyExchangeConversionImage.svg";
 export { default as PeerToPeerTransfersImage } from "./PeerToPeerTransfersImage.svg";
 export { default as PaymentsMoneyMovementImage } from "./PaymentsMoneyMovementImage.svg";
+export { default as TrustStartOneImage } from "./TrustStartsImageOne.svg";
 
 // Identity & Regulatory Compliance
 export { default as BankBasedIdentityVerificationImage } from "./BankBasedIdentityVerificationImage.svg";

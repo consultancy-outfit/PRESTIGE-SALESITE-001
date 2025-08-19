@@ -42,7 +42,7 @@ const products = [
     tag: "Payments & Money Movement",
     title: "Move money with confidence instantly.",
     description:
-      "Prestige lets you power every kind of transfer to enterprise-level disbursements. Whether domestic or international, micro or bulk, we make payments fast, intelligent, and secure.",
+      "Prestige lets you power every kind of transaction, from P2P transfers to enterprise-level disbursements. Whether domestic or international, micro or bulk, we make payments fast, intelligent, and secure.",
     url: "/products/payments-and-money-movement",
   },
   {
