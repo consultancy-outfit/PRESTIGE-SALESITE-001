@@ -237,19 +237,22 @@ export const UseCases = () => {
         <Box
           display={"flex"}
           flexDirection={"column"}
-          alignItems={"center"}
+          alignItems={{ xs: "flex-start", md: "center" }}
           justifyContent={"center"}
-          py={{md: 10, xs: 5}}
+          py={{ md: 10, xs: 5 }}
           px={2}
           m={2}
-          pb={{md: 20, xs: 5}}
+          pb={{ md: 20, xs: 5 }}
         >
-          <Stack direction="row" spacing={1} alignItems="center">
-            <UseCasesIcon
-              sx={{
-                fontSize: 40,
-              }}
-            />
+          {/* Heading Icon + Title */}
+          <Stack
+            direction="row"
+            spacing={1}
+            alignItems="center"
+            justifyContent={{ xs: "flex-start", md: "center" }}
+            width="100%"
+          >
+            <UseCasesIcon sx={{ fontSize: 40 }} />
             <Typography
               variant="subtitle2"
               sx={{
@@ -262,18 +265,24 @@ export const UseCases = () => {
               Use Case
             </Typography>
           </Stack>
+
+          {/* Main Heading */}
           <Typography
             variant="h2"
             color="white"
             fontWeight={600}
-            textAlign={"center"}
+            textAlign={{ xs: "left", md: "center" }}
+            mt={2}
           >
             Built for Real Impact Trusted <br /> Across Every Financial Journey
           </Typography>
+
+          {/* Subtext */}
           <Typography
             variant="subtitle2"
             color="white"
-            sx={{ mb: 3, textAlign: "center" }}
+            sx={{ mb: 3 }}
+            textAlign={{ xs: "left", md: "center" }}
           >
             Discover how Prestige powers smarter, faster, and safer financial
             experiences. From data-driven insights to <br /> real-time payments
@@ -283,11 +292,9 @@ export const UseCases = () => {
           </Typography>
         </Box>
       </Stack>
-      <Box
-        sx={{
-          backgroundColor: "#fff",
-        }}
-      >
+
+      {/* Image Section */}
+      <Box sx={{ backgroundColor: "#fff", mt: { xs: 2, md: 0 } }}>
         <Image
           src={UseCaseFirstImage}
           alt="HeroSection"
@@ -299,21 +306,23 @@ export const UseCases = () => {
           }}
         />
       </Box>
+
+      {/* Dynamic Sections */}
       <>
         {sections.map((section, index) => (
           <Box
             key={index}
             sx={{
               backgroundColor: "#F2F5F7",
-              px: {md: 12, xs: 2},
-              pb: {md: 5, xs: 2},
+              px: { md: 12, xs: 2 },
+              pb: { md: 5, xs: 2 },
             }}
           >
             <Typography
               variant="h3"
               color="black"
               fontWeight={500}
-              textAlign="center"
+              textAlign={{ xs: "left", md: "center" }}
               py={5}
             >
               {section.title}
@@ -322,14 +331,15 @@ export const UseCases = () => {
             <Image
               src={section.image}
               alt="HeroSection"
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
+              style={{ width: "100%", height: "100%" }}
             />
 
             {section.description && (
-              <Typography sx={{ mt: 4 }} variant="subtitle2">
+              <Typography
+                sx={{ mt: 4 }}
+                variant="subtitle2"
+                textAlign={{ xs: "left", md: "center" }}
+              >
                 {section.description}
               </Typography>
             )}
@@ -405,7 +415,6 @@ export const UseCases = () => {
           </Box>
         ))}
       </>
-
       <ReadyToGetStarted />
     </>
   );
