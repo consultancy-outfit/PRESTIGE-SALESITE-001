@@ -233,6 +233,7 @@ const OurLeadership: React.FC = () => {
                 fontSize={18}
                 sx={{
                   borderBottom: "2px solid #C3F53C",
+                  alignSelf: { xs: "center", md: "flex-start" },
                 }}
               >
                 Join the Prestige Network
@@ -281,6 +282,7 @@ const OurLeadership: React.FC = () => {
                   fontFamily: "Inter",
                   fontWeight: 500,
                   minWidth: "121px",
+                  alignSelf: { xs: "center", md: "flex-start" },
                 }}
                 endIcon={<EastSharpIcon />}
                 onClick={() => router.push("/get-started")}
