@@ -18,7 +18,7 @@ export default function Home() {
         <SecurityAndRegulatoryReadinessHome />
         <WhyChoosePrestigeHome/>
         <OurTechStackHome/>
-        <CustomerStoriesHome/>
+{/*         <CustomerStoriesHome/> */}
         <ReadyToGetStarted/>
       </Stack>
     </>
